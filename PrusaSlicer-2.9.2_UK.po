@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer 2.9.2-UK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-11 15:26+0300\n"
-"PO-Revision-Date: 2025-09-08 11:16+0300\n"
+"PO-Revision-Date: 2025-09-09 01:22+0300\n"
 "Last-Translator: DrFOXUA <doctor13ua@gmail.com>\n"
 "Language-Team: FoxSoft <doctor13ua@gmail.com>\n"
 "Language: uk_UA\n"
@@ -24,6 +24,24 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Bookmarks: 762,1599,135,-1,-1,-1,-1,-1,-1,2800\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#. DrFOX: В исходнике НЕ найдено для перевода, в программе переведено
+#: MainFrame.cpp:1607
+msgid "Select &All"
+msgstr "Вибрати Все"
+
+#. DrFOX: В исходнике НЕ найдено для перевода, в программе переведено
+#: MainFrame.cpp:1607
+msgid "Select All"
+msgstr "Вибрати Все"
+
+#. DrFOX: В исходнике НЕ найдено для перевода, в программе переведено
+msgid "&Delete"
+msgstr "Вилучити"
+
+#. DrFOX: В исходнике НЕ найдено для перевода, в программе переведено
+msgid "Cu&t"
+msgstr "Вирізати"
 
 #. DrFOX: В исходнике НЕ найдено для перевода, в программе НЕ переведено
 msgid "Invalid ascii GCode file"
@@ -7678,7 +7696,7 @@ msgstr "Встановити активним правий повзунок"
 
 #: KBShortcutsDialog.cpp:266
 msgid "Horizontal Slider"
-msgstr "Горизонтальний повзунок"
+msgstr "Горизонтальний Повзунок"
 
 #: KBShortcutsDialog.cpp:266
 msgid "The following shortcuts are applicable in G-code preview when the horizontal slider is active"
