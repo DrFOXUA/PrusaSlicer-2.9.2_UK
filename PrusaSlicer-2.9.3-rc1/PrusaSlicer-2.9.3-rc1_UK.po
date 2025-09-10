@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer 2.9.3-rc1_UK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-05 15:48+0200\n"
-"PO-Revision-Date: 2025-09-11 00:27+0300\n"
+"PO-Revision-Date: 2025-09-11 01:39+0300\n"
 "Last-Translator: DrFOXUA <doctor13ua@gmail.com>\n"
 "Language-Team: FoxSoft <doctor13ua@gmail.com>\n"
 "Language: uk_UA\n"
@@ -1172,6 +1172,7 @@ msgstr "Частина деталі в повітрі"
 msgid "Thin fragile part"
 msgstr "Тонка крихка частина"
 
+# DrFOXUA: do not translate
 #. TRN this translation rule is used to translate lists of uknown size on single line. The first argument is element of the list,
 #. the second argument may be element or rest of the list. For most languages, this does not need translation, but some use different
 #. separator than comma and some use blank space in front of the separator.
@@ -1569,6 +1570,7 @@ msgstr ""
 "Температура столу для останніх шарів після першого. Установіть 0, щоб відключити команди керування температурою столу на "
 "виході."
 
+# DrFOXUA: do not translate
 #: src/libslic3r/PrintConfig.cpp:597 src/libslic3r/PrintConfig.cpp:609 src/libslic3r/PrintConfig.cpp:622
 #: src/libslic3r/PrintConfig.cpp:1631 src/libslic3r/PrintConfig.cpp:1698 src/libslic3r/PrintConfig.cpp:3610
 #: src/libslic3r/PrintConfig.cpp:4447 src/slic3r/GUI/ConfigWizard.cpp:2235 src/slic3r/GUI/ConfigWizard.cpp:2249
@@ -1715,6 +1717,7 @@ msgstr ""
 "Зміна кута мосту. Якщо встановити на 0, кут мостів буде розрахований автоматично. Інакше передбачений кут буде використаний "
 "для всіх мостів. Використовуйте 180° для нульового кута."
 
+# DrFOXUA: do not translate
 #: src/libslic3r/PrintConfig.cpp:692 src/libslic3r/PrintConfig.cpp:1550 src/libslic3r/PrintConfig.cpp:2059
 #: src/libslic3r/PrintConfig.cpp:2733 src/libslic3r/PrintConfig.cpp:2929 src/libslic3r/PrintConfig.cpp:2939
 #: src/libslic3r/PrintConfig.cpp:3257 src/libslic3r/PrintConfig.cpp:3491 src/libslic3r/PrintConfig.cpp:3511
@@ -1732,6 +1735,7 @@ msgstr "Швидкість вентилятора для мостів"
 msgid "This fan speed is enforced during all bridges and overhangs."
 msgstr "Ця швидкість вентилятора виконується для всіх мостів і виступів."
 
+# DrFOXUA: do not translate
 #: src/libslic3r/PrintConfig.cpp:700 src/libslic3r/PrintConfig.cpp:822 src/libslic3r/PrintConfig.cpp:831
 #: src/libslic3r/PrintConfig.cpp:840 src/libslic3r/PrintConfig.cpp:849 src/libslic3r/PrintConfig.cpp:1387
 #: src/libslic3r/PrintConfig.cpp:1527 src/libslic3r/PrintConfig.cpp:1538 src/libslic3r/PrintConfig.cpp:1561
@@ -7996,7 +8000,7 @@ msgstr "Експертний"
 
 #: src/slic3r/GUI/ButtonsDescription.cpp:186
 msgid "Revert color"
-msgstr "Скидання кольору"
+msgstr "Скинути кольор"
 
 #: src/slic3r/GUI/ButtonsDescription.cpp:204
 msgid "Buttons And Text Colors Description"
@@ -9395,7 +9399,7 @@ msgstr "Якесь розширення у вхідних даних є неді
 
 #: src/slic3r/GUI/FileArchiveDialog.cpp:174
 msgid "Archive preview"
-msgstr "Попередній перегляд архіву"
+msgstr "Перегляд архіву"
 
 #: src/slic3r/GUI/FileArchiveDialog.cpp:277 src/slic3r/GUI/FileArchiveDialog.cpp:290
 msgid "Open"
@@ -10399,7 +10403,7 @@ msgstr "Застосувати"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1734
 msgid "Revert font changes."
-msgstr "Скидання шрифту."
+msgstr "Скинути зміни шрифту."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:1840
 #, boost-format
@@ -10592,7 +10596,7 @@ msgstr "Скинути розмір тексту."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:2649
 msgid "Revert embossed depth."
-msgstr "Скинути висоту рельєфу шрифту."
+msgstr "Скинути глибину тиснення."
 
 #: src/slic3r/GUI/Gizmos/GLGizmoEmboss.cpp:2708
 msgid ""
@@ -11054,7 +11058,7 @@ msgstr "Випорожнити цей об'єкт"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoHollow.cpp:35
 msgid "Preview hollowed and drilled model"
-msgstr "Попередній перегляд порожнистої та просвердленої моделі"
+msgstr "Перегляд порожнистої та просвердленої моделі"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoHollow.cpp:36
 msgid "Offset"
@@ -11682,7 +11686,7 @@ msgstr "Правка: Інструмент - SVG"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:391 src/slic3r/GUI/GUI_Factories.cpp:621
 msgid "SVG"
-msgstr ""
+msgstr "Файл .SVG"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1057 src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:1094
 #, boost-format
@@ -11863,7 +11867,7 @@ msgstr "Віддзеркалити"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2178
 msgid "Choose SVG file for emboss:"
-msgstr "Вибрати файл .SVG для рельєфного тексту:"
+msgstr "Вибрати файл .SVG для тиснення:"
 
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2232
 #, boost-format
@@ -11883,7 +11887,7 @@ msgstr "Парсер NanoSVG не може прочитати файл (%1%)."
 #: src/slic3r/GUI/Gizmos/GLGizmoSVG.cpp:2252
 #, boost-format
 msgid "SVG file does NOT contain a single path to be embossed (%1%)."
-msgstr "Файл .SVG не містить жодного шляху для рельєфного тексту (%1%)."
+msgstr "SVG-файл НЕ містить жодного шляху для тиснення (%1%)."
 
 #: src/slic3r/GUI/Gizmos/GLGizmosManager.cpp:214
 msgid "ERROR: Please close all manipulators available from the left toolbar first"
@@ -13833,7 +13837,7 @@ msgstr "Додати об'єкт Рельєфного тексту"
 #. It is same for Text and SVG.
 #: src/slic3r/GUI/Jobs/EmbossJob.cpp:1035
 msgid "Emboss attribute change"
-msgstr "Змінити параметри рельєфу"
+msgstr "Змінити параметри тиснення"
 
 #: src/slic3r/GUI/Jobs/EmbossJob.cpp:1093
 msgid "Add Emboss text Volume"
@@ -16872,7 +16876,7 @@ msgstr "Розмір шрифту програми"
 
 #: src/slic3r/GUI/Preferences.cpp:1135
 msgid "Revert font to default"
-msgstr "Скидання шрифту за замовчуванням"
+msgstr "Відновити шрифт за замовчуванням"
 
 #: src/slic3r/GUI/Preferences.cpp:1147
 msgid "Font size"
@@ -17099,7 +17103,7 @@ msgstr "Об'ємний"
 # Ограничение скорости печати: 2
 #: src/slic3r/GUI/PresetHints.cpp:193
 msgid "flow rate is maximized"
-msgstr "швидкість потоку максимізується"
+msgstr "швидкість потоку збільшується"
 
 # Ограничение скорости печати:
 #: src/slic3r/GUI/PresetHints.cpp:196
@@ -17205,6 +17209,7 @@ msgstr "Завантажити в Чергу"
 msgid "Upload and Simulate"
 msgstr "Завантажити та змоделювати"
 
+# DrFOXUA: do not translate
 #: src/slic3r/GUI/PrintHostDialogs.cpp:302
 msgid "ID"
 msgstr ""
@@ -17824,7 +17829,7 @@ msgstr "Органічні підтримки"
 
 #: src/slic3r/GUI/Tab.cpp:1597
 msgid "Speed for print moves"
-msgstr "Швидкість друкарських рухів"
+msgstr "Швидкість переміщення під час друку"
 
 #: src/slic3r/GUI/Tab.cpp:1611
 msgid "Dynamic overhang speed"
@@ -17832,7 +17837,7 @@ msgstr "Динамічна швидкість під час нависань"
 
 #: src/slic3r/GUI/Tab.cpp:1618
 msgid "Speed for non-print moves"
-msgstr "Швидкість недрукарських рухів"
+msgstr "Швидкість переміщення без друку"
 
 #: src/slic3r/GUI/Tab.cpp:1622
 msgid "Modifiers"
@@ -18830,7 +18835,7 @@ msgstr "Так"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:343
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: src/slic3r/GUI/UpdateDialogs.cpp:358 src/slic3r/GUI/UpdateDialogs.cpp:420
 msgid "%s incompatibility"
@@ -19051,6 +19056,7 @@ msgstr "Ваш принтер Prusa повинен автоматично зав
 msgid "Note: This file will contain the SSID and password in plain text."
 msgstr "Примітка: Цей файл міститиме ім'я мережі (SSID) і пароль у вигляді звичайного тексту."
 
+# DrFOXUA: do not translate
 #. TRN SSID of WiFi network. It is a standard abbreviation which should probably not change in most languages.
 #: src/slic3r/GUI/WifiConfigDialog.cpp:61
 msgid "SSID"
@@ -20006,6 +20012,7 @@ msgstr ""
 "\n"
 "Будь ласка, надішліть цей звіт розробникові програми, дякуємо!\n"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextstyledlg.cpp:210 ../src/richtext/richtextstyledlg.cpp:222
 msgid " "
 msgstr ""
@@ -20030,6 +20037,7 @@ msgstr " (у модулі \"%s\")"
 msgid " (while overwriting an existing item)"
 msgstr " (під час перезапису існуючого елемента)"
 
+# DrFOXUA: do not translate
 #: ../src/common/docview.cpp:1642
 msgid " - "
 msgstr ""
@@ -20196,6 +20204,7 @@ msgstr "Рамка"
 msgid "&Bullet style:"
 msgstr "Стиль позначки:"
 
+# DrFOXUA: do not translate
 #: ../src/common/stockitem.cpp:146
 msgid "&CD-Rom"
 msgstr ""
@@ -20425,6 +20434,7 @@ msgstr "Помітки:"
 msgid "&Number:"
 msgstr "Номер:"
 
+# DrFOXUA: do not translate
 #: ../src/generic/fontdlgg.cpp:475 ../src/generic/fontdlgg.cpp:482 ../src/osx/carbon/fontdlg.cpp:408
 #: ../src/common/stockitem.cpp:178
 msgid "&OK"
@@ -20675,6 +20685,7 @@ msgstr "'%s' має містити тільки символи алфавіту 
 msgid "'%s' should only contain digits."
 msgstr "'%s' має містити лише цифри."
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:229 ../src/richtext/richtextbulletspage.cpp:166
 msgid "(*)"
 msgstr ""
@@ -20704,14 +20715,17 @@ msgstr "(закладки)"
 msgid "(none)"
 msgstr "(нічого)"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:492 ../src/richtext/richtextbulletspage.cpp:284
 msgid "*"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:236 ../src/richtext/richtextbulletspage.cpp:173
 msgid "*)"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:495 ../src/richtext/richtextbulletspage.cpp:287
 msgid "+"
 msgstr ""
@@ -20720,46 +20734,57 @@ msgstr ""
 msgid ", 64-bit edition"
 msgstr ", 64-бітова версія"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:493 ../src/richtext/richtextbulletspage.cpp:285
 msgid "-"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/generic/filepickerg.cpp:66
 msgid "..."
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:276 ../src/richtext/richtextliststylepage.cpp:450
 msgid "1.1"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:277 ../src/richtext/richtextliststylepage.cpp:451
 msgid "1.2"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:278 ../src/richtext/richtextliststylepage.cpp:452
 msgid "1.3"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:279 ../src/richtext/richtextliststylepage.cpp:453
 msgid "1.4"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:280 ../src/richtext/richtextliststylepage.cpp:454
 msgid "1.5"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:281 ../src/richtext/richtextliststylepage.cpp:455
 msgid "1.6"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:282 ../src/richtext/richtextliststylepage.cpp:456
 msgid "1.7"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:283 ../src/richtext/richtextliststylepage.cpp:457
 msgid "1.8"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:284 ../src/richtext/richtextliststylepage.cpp:458
 msgid "1.9"
 msgstr ""
@@ -20784,6 +20809,7 @@ msgstr "12 x 11 дюймів"
 msgid "15 x 11 in"
 msgstr "15 x 11 дюймів"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextindentspage.cpp:285 ../src/richtext/richtextliststylepage.cpp:459
 msgid "2"
 msgstr ""
@@ -20864,6 +20890,7 @@ msgstr "<b>Жирний шрифт.</b> "
 msgid "<i>Italic face.</i> "
 msgstr "<i>Курсивний шрифт.</i> "
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:494 ../src/richtext/richtextbulletspage.cpp:286
 msgid ">"
 msgstr ""
@@ -20965,10 +20992,12 @@ msgstr "A6 105 x 148 мм"
 msgid "A6 Rotated 148 x 105 mm"
 msgstr "A6 Повернутий 148 x 105 мм"
 
+# DrFOXUA: do not translate
 #: ../src/generic/fontdlgg.cpp:83 ../src/richtext/richtextformatdlg.cpp:529 ../src/osx/carbon/fontdlg.cpp:153
 msgid "ABCDEFGabcdefg12345"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextsymboldlg.cpp:458 ../src/common/ftp.cpp:403
 msgid "ASCII"
 msgstr ""
@@ -20985,11 +21014,13 @@ msgstr "Про програму…"
 msgid "Absolute"
 msgstr "Абсолютна"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:873
 msgid "ActiveBorder"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:874
 msgid "ActiveCaption"
@@ -21067,6 +21098,7 @@ msgstr "До SetObjectClassInfo передано повідомлення Об'�
 msgid "Already dialling ISP."
 msgstr "Вже дзвонимо ISP."
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:331 ../src/univ/themes/win32.cpp:3756
 msgid "Alt+"
 msgstr ""
@@ -21227,6 +21259,7 @@ msgstr "Колір фону:"
 msgid "Background colour"
 msgstr "Колір фону"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:52
 msgid "Backspace"
@@ -21306,26 +21339,31 @@ msgstr "Стиль позначки"
 msgid "Bullets"
 msgstr "Позначки"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: System cursor name
 #: ../src/propgrid/advprops.cpp:1756
 msgid "Bullseye"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:875
 msgid "ButtonFace"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:876
 msgid "ButtonHighlight"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:877
 msgid "ButtonShadow"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:878
 msgid "ButtonText"
@@ -21363,6 +21401,7 @@ msgstr "C6 Конверт, 114 x 162 мм"
 msgid "C65 Envelope, 114 x 229 mm"
 msgstr "C65 Конверт, 114 x 229 мм"
 
+# DrFOXUA: do not translate
 #: ../src/common/stockitem.cpp:146
 msgid "CD-Rom"
 msgstr ""
@@ -21608,6 +21647,7 @@ msgstr "Не вдалося дочекатись закінчення нитки
 msgid "Capital"
 msgstr "Прописні"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:879
 msgid "CaptionText"
@@ -21958,11 +21998,13 @@ msgstr "Під'єднання…"
 msgid "Contents"
 msgstr "Зміст"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:880
 msgid "ControlDark"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:881
 msgid "ControlLight"
@@ -22117,6 +22159,7 @@ msgstr "Створити новий каталог"
 msgid "Creating %s \"%s\" failed."
 msgstr "Не вдалося створити %s \"%s\"."
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:333
 msgid "Ctrl+"
 msgstr ""
@@ -22211,6 +22254,7 @@ msgstr "Типове кодування"
 msgid "Default printer"
 msgstr "Типова друкарка"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:51
 msgid "Del"
@@ -22447,11 +22491,13 @@ msgstr "Вмикає прозорість тіні."
 msgid "Enables the shadow spread."
 msgstr "Включає розкид тіні."
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:66
 msgid "End"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:55
 msgid "Enter"
@@ -22533,11 +22579,13 @@ msgstr "Помилка під час друку: "
 msgid "Error: "
 msgstr "Помилка: "
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:69
 msgid "Esc"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:70
 msgid "Escape"
@@ -22585,6 +22633,7 @@ msgstr "Розширена кодова сторінка Unix для японс�
 msgid "Extraction of '%s' into '%s' failed."
 msgstr "Розпакування '%s' до '%s' закінчилося з помилкою."
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:249 ../src/common/accelcmn.cpp:344
 msgid "F"
 msgstr ""
@@ -22592,7 +22641,7 @@ msgstr ""
 #. TRANSLATORS: Label of font face name
 #: ../src/propgrid/advprops.cpp:672
 msgid "Face Name"
-msgstr "Нарис"
+msgstr "Шрифт"
 
 #: ../src/unix/snglinst.cpp:269
 msgid "Failed to access lock file."
@@ -23395,16 +23444,19 @@ msgstr "Сховати Решту"
 msgid "Hide this notification message."
 msgstr "Сховати це сповіщення."
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:884
 msgid "Highlight"
 msgstr ""
 
+# DrFOXUA: DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:885
 msgid "HighlightText"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/stockitem.cpp:164 ../src/common/accelcmn.cpp:65
 msgid "Home"
@@ -23418,6 +23470,7 @@ msgstr "Головна директорія"
 msgid "How the object will float relative to the text."
 msgstr "Спосіб взаємного розташування об’єкта і тексту."
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: System cursor name
 #: ../src/propgrid/advprops.cpp:1760
 msgid "I-Beam"
@@ -23545,16 +23598,19 @@ msgstr "Не вдалося переписати файл '%s'"
 msgid "Impossible to set permissions for the file '%s'"
 msgstr "Не вдалося встановити доступ до файла '%s'"
 
+# DrFOXUA: DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:886
 msgid "InactiveBorder"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:887
 msgid "InactiveCaption"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:888
 msgid "InactiveCaptionText"
@@ -23588,6 +23644,7 @@ msgstr "Індійська (ISO-8859-12)"
 msgid "Initialization failed in post init, aborting."
 msgstr "Помилка ініціалізації у процесі post init, зупинка."
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:54
 msgid "Ins"
@@ -23745,128 +23802,154 @@ msgstr "Вирівняний"
 msgid "Justify text left and right."
 msgstr "Розподілити текст за шириною."
 
+# DrFOXUA: do not translate
 #: ../src/common/fmapbase.cpp:163
 msgid "KOI8-R"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/common/fmapbase.cpp:164
 msgid "KOI8-U"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:265 ../src/common/accelcmn.cpp:347
 msgid "KP_"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:106
 msgid "KP_Add"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:101
 msgid "KP_Begin"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:109
 msgid "KP_Decimal"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:103
 msgid "KP_Delete"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:110
 msgid "KP_Divide"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:95
 msgid "KP_Down"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:100
 msgid "KP_End"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:90
 msgid "KP_Enter"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:104
 msgid "KP_Equal"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:91
 msgid "KP_Home"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:102
 msgid "KP_Insert"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:92
 msgid "KP_Left"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:105
 msgid "KP_Multiply"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:99
 msgid "KP_Next"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:97
 msgid "KP_PageDown"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:96
 msgid "KP_PageUp"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:98
 msgid "KP_Prior"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:94
 msgid "KP_Right"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:107
 msgid "KP_Separator"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:88
 msgid "KP_Space"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:108
 msgid "KP_Subtract"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:89
 msgid "KP_Tab"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:93
 msgid "KP_Up"
@@ -24446,116 +24529,139 @@ msgstr "Без підкреслювання"
 msgid "Note, 8 1/2 x 11 in"
 msgstr "Примітка, 8 1/2 x 11 дюйм"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:105
 msgid "Num *"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:106
 msgid "Num +"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:107
 msgid "Num ,"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:108
 msgid "Num -"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:109
 msgid "Num ."
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:110
 msgid "Num /"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:104
 msgid "Num ="
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:101
 msgid "Num Begin"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:103
 msgid "Num Delete"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:95
 msgid "Num Down"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:100
 msgid "Num End"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:90
 msgid "Num Enter"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:91
 msgid "Num Home"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:102
 msgid "Num Insert"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:86
 msgid "Num Lock"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:97
 msgid "Num Page Down"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:96
 msgid "Num Page Up"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:94
 msgid "Num Right"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:88
 msgid "Num Space"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:89
 msgid "Num Tab"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:93
 msgid "Num Up"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:92
 msgid "Num left"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:86
 msgid "Num_lock"
@@ -24818,11 +24924,13 @@ msgstr "Налаштування сторінки"
 msgid "Page setup"
 msgstr "Налаштування сторінки"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:58
 msgid "PageDown"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:57
 msgid "PageUp"
@@ -24871,11 +24979,13 @@ msgstr "Крапка"
 msgid "Permissions"
 msgstr "Дозволи"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:60
 msgid "PgDn"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:59
 msgid "PgUp"
@@ -24926,7 +25036,7 @@ msgstr "Вправо"
 #. TRANSLATORS: Label of font point size
 #: ../src/propgrid/advprops.cpp:662
 msgid "Point Size"
-msgstr "Розмір точки"
+msgstr "Розмір Точки"
 
 #: ../src/generic/prntdlgg.cpp:298
 msgid "PostScript file"
@@ -24950,19 +25060,19 @@ msgstr "Попередня сторінка"
 
 #: ../include/wx/prntbase.h:399 ../src/common/docview.cpp:1268
 msgid "Print Preview"
-msgstr "Передогляд друку"
+msgstr "Перегляд Друку"
 
 #: ../src/common/prntbase.cpp:2015 ../src/common/prntbase.cpp:2057 ../src/common/prntbase.cpp:2065
 msgid "Print Preview Failure"
-msgstr "Помилка попереднього перегляду друку"
+msgstr "Помилка попереднього Перегляду Друку"
 
 #: ../src/generic/prntdlgg.cpp:224
 msgid "Print Range"
-msgstr "Друк інтервалу"
+msgstr "Інтервалу Друку"
 
 #: ../src/generic/prntdlgg.cpp:449
 msgid "Print Setup"
-msgstr "Налаштування друку"
+msgstr "Налаштування Друку"
 
 #: ../src/generic/prntdlgg.cpp:621
 msgid "Print in colour"
@@ -24990,7 +25100,7 @@ msgstr "Надрукувати цю сторінку"
 
 #: ../src/generic/prntdlgg.cpp:185
 msgid "Print to File"
-msgstr "Друк в файл"
+msgstr "Друк в Файл"
 
 #: ../src/common/stockitem.cpp:183
 msgid "Print..."
@@ -25022,7 +25132,7 @@ msgstr "Друк "
 
 #: ../src/common/prntbase.cpp:347
 msgid "Printing Error"
-msgstr "Помилка друку"
+msgstr "Помилка Друку"
 
 #: ../src/common/prntbase.cpp:565
 msgid "Printing page %d"
@@ -25059,7 +25169,7 @@ msgstr "Властивість"
 #. TRANSLATORS: Caption of message box displaying any property error
 #: ../src/propgrid/propgrid.cpp:3185 ../src/propgrid/propgrid.cpp:3318
 msgid "Property Error"
-msgstr "Редактор властивостей"
+msgstr "Помилка Властивості"
 
 #: ../src/propgrid/advprops.cpp:1597
 msgid "Purple"
@@ -25086,6 +25196,7 @@ msgstr "Вийти"
 msgid "Quit this program"
 msgstr "Вийти з цієї програми"
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:338
 msgid "RawCtrl+"
 msgstr ""
@@ -25174,7 +25285,7 @@ msgstr "Візуалізатор '%s' має несумісну версію %d.
 
 #: ../src/richtext/richtextbuffer.cpp:4527
 msgid "Renumber List"
-msgstr "Перенумерувати список"
+msgstr "Перенумерувати Список"
 
 #: ../src/common/stockitem.cpp:188
 msgid "Rep&lace"
@@ -25211,7 +25322,7 @@ msgstr "Повернення"
 
 #: ../src/common/stockitem.cpp:189
 msgid "Revert to Saved"
-msgstr "Повернутися до збереженого"
+msgstr "Повернутися до Збереженого"
 
 #: ../src/richtext/richtextborderspage.cpp:616
 msgid "Ridge"
@@ -25262,11 +25373,11 @@ msgstr "Зберегти файл %s"
 
 #: ../src/generic/logg.cpp:512
 msgid "Save &As..."
-msgstr "Зберегти як..."
+msgstr "Зберегти Як..."
 
 #: ../src/common/docview.cpp:366
 msgid "Save As"
-msgstr "Зберегти як"
+msgstr "Зберегти Як"
 
 #: ../src/common/stockitem.cpp:267
 msgid "Save current document"
@@ -25288,16 +25399,19 @@ msgstr "Не вдалося зберегти пароль для \"%s/%s\": %s."
 msgid "Script"
 msgstr "Сценарій"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:87
 msgid "Scroll Lock"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:87
 msgid "Scroll_lock"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:890
 msgid "Scrollbar"
@@ -25355,7 +25469,7 @@ msgstr "Виберіть шаблон документа"
 
 #: ../src/common/docview.cpp:1969
 msgid "Select a document view"
-msgstr "Виберіть перегляд документа"
+msgstr "Виберіть подання документа"
 
 #: ../src/richtext/richtextfontpage.cpp:226 ../src/richtext/richtextfontpage.cpp:228
 msgid "Select regular or bold."
@@ -25388,7 +25502,7 @@ msgstr "Служби"
 
 #: ../src/richtext/richtextbuffer.cpp:11217
 msgid "Set Cell Style"
-msgstr "Встановити стиль комірки"
+msgstr "Встановити Стиль Комірки"
 
 #: ../include/wx/xtiprop.h:175
 msgid "SetProperty called w/o valid setter"
@@ -25414,6 +25528,7 @@ msgstr "Тінь"
 msgid "Shadow c&olour:"
 msgstr "Колір тіні:"
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:335
 msgid "Shift+"
 msgstr ""
@@ -25428,7 +25543,7 @@ msgstr "Показати приховані файли"
 
 #: ../src/osx/menu_osx.cpp:580
 msgid "Show All"
-msgstr "Показати всі"
+msgstr "Показати Всі"
 
 #: ../src/html/helpwnd.cpp:492
 msgid "Show all"
@@ -25518,7 +25633,7 @@ msgstr "Нахилений"
 
 #: ../src/richtext/richtextfontpage.cpp:289
 msgid "Small C&apitals"
-msgstr "Мала капітель"
+msgstr "Малі Заглавні"
 
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:79
@@ -25556,7 +25671,7 @@ msgstr "Звуковий файл '%s' має непідтримуваний ф�
 
 #: ../src/common/stockitem.cpp:197
 msgid "Spell Check"
-msgstr "Перевірка правопису"
+msgstr "Перевірка Правопису"
 
 #. TRANSLATORS: System cursor name
 #: ../src/propgrid/advprops.cpp:1776
@@ -25585,7 +25700,7 @@ msgstr "Рядок для кольору : Некоректна специфік
 
 #: ../include/wx/richtext/richtextstyledlg.h:46
 msgid "Style Organiser"
-msgstr "Записник стилів"
+msgstr "Записник Стилів"
 
 #: ../src/osx/carbon/fontdlg.cpp:348
 msgid "Style:"
@@ -25656,6 +25771,7 @@ msgstr "TIFF: Помилка запису зображення."
 msgid "TIFF: Image size is abnormally big."
 msgstr "TIFF: розмір зображення є надзвичайно великим."
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:68
 msgid "Tab"
@@ -25663,7 +25779,7 @@ msgstr ""
 
 #: ../src/richtext/richtextbuffer.cpp:11498
 msgid "Table Properties"
-msgstr "Властивості таблиці"
+msgstr "Властивості Таблиці"
 
 #: ../src/common/paper.cpp:145
 msgid "Tabloid Extra 11.69 x 18 in"
@@ -25673,6 +25789,7 @@ msgstr "Таблоїд Екстра 11,69 x 18 дюймів"
 msgid "Tabloid, 11 x 17 in"
 msgstr "Таблоїд, 11 x 17 дюймів"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextformatdlg.cpp:354
 msgid "Tabs"
 msgstr ""
@@ -26085,17 +26202,19 @@ msgstr "Вибачте, підказки недоступні!"
 
 #: ../src/generic/prntdlgg.cpp:242
 msgid "To:"
-msgstr ""
+msgstr "До:"
 
 #: ../src/richtext/richtextbuffer.cpp:8363
 msgid "Too many EndStyle calls!"
 msgstr "Забагато викликів EndStyle!"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:891
 msgid "Tooltip"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:892
 msgid "TooltipText"
@@ -26150,6 +26269,7 @@ msgstr "Помилка дії з типами '%s': властивість з м
 msgid "US Std Fanfold, 14 7/8 x 11 in"
 msgstr "US Std Fanfold, 14 7/8 x 11 дюйм"
 
+# DrFOXUA: do not translate
 #: ../src/common/fmapbase.cpp:196
 msgid "US-ASCII"
 msgstr ""
@@ -26625,16 +26745,19 @@ msgstr "Тільки цілі слова"
 msgid "Win32 theme"
 msgstr "Тема Win32"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:893
 msgid "Window"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:894
 msgid "WindowFrame"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Keyword of system colour
 #: ../src/propgrid/advprops.cpp:895
 msgid "WindowText"
@@ -26700,6 +26823,7 @@ msgstr "В’єтнамська Windows (CP 1258)"
 msgid "Windows Western European (CP 1252)"
 msgstr "Західноєвропейська Windows (CP 1252)"
 
+# DrFOXUA: do not translate
 #: ../src/common/fmapbase.cpp:181
 msgid "Windows/DOS OEM (CP 437)"
 msgstr ""
@@ -26708,16 +26832,19 @@ msgstr ""
 msgid "Windows/DOS OEM Cyrillic (CP 866)"
 msgstr "Кирилиця, Windows/DOS OEM (CP 866)"
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:111
 msgid "Windows_Left"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:113
 msgid "Windows_Menu"
 msgstr ""
 
+# DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:112
 msgid "Windows_Right"
@@ -26859,6 +26986,7 @@ msgstr ""
 msgid "a transaction failed."
 msgstr "помилкова дія."
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:189
 msgid "alt"
 msgstr ""
@@ -27063,6 +27191,7 @@ msgstr "помилка стиснення"
 msgid "conversion to 8-bit encoding failed"
 msgstr "перетворення у 8-бітове кодування зазнало невдачі"
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:187
 msgid "ctrl"
 msgstr ""
@@ -27256,6 +27385,7 @@ msgstr "південь"
 msgid "normal"
 msgstr "звичайний"
 
+# DrFOXUA: do not translate
 #: ../src/common/cmdline.cpp:1492
 msgid "num"
 msgstr ""
@@ -27272,6 +27402,7 @@ msgstr "нестача пам'яті"
 msgid "process context description"
 msgstr "опис контексту процесу"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextbackgroundpage.cpp:227 ../src/richtext/richtextbackgroundpage.cpp:250
 #: ../src/richtext/richtextbackgroundpage.cpp:290 ../src/richtext/richtextbackgroundpage.cpp:317
 #: ../src/richtext/richtextfontpage.cpp:177 ../src/richtext/richtextfontpage.cpp:180 ../src/richtext/richtextborderspage.cpp:255
@@ -27282,6 +27413,7 @@ msgstr "опис контексту процесу"
 msgid "pt"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextbackgroundpage.cpp:225 ../src/richtext/richtextbackgroundpage.cpp:228
 #: ../src/richtext/richtextbackgroundpage.cpp:229 ../src/richtext/richtextbackgroundpage.cpp:248
 #: ../src/richtext/richtextbackgroundpage.cpp:251 ../src/richtext/richtextbackgroundpage.cpp:252
@@ -27327,6 +27459,7 @@ msgstr ""
 msgid "px"
 msgstr ""
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:193
 msgid "rawctrl"
 msgstr ""
@@ -27363,6 +27496,7 @@ msgstr "сімнадцятий"
 msgid "seventh"
 msgstr "сьомий"
 
+# DrFOXUA: do not translate
 #: ../src/common/accelcmn.cpp:191
 msgid "shift"
 msgstr ""
@@ -27411,6 +27545,7 @@ msgstr "стандартний/трикутник"
 msgid "stored file length not in Zip header"
 msgstr "довжина запакованого файл не у заголовку Zip"
 
+# DrFOXUA: do not translate
 #: ../src/common/cmdline.cpp:1488
 msgid "str"
 msgstr ""
@@ -27546,6 +27681,7 @@ msgstr "wxWidgets не зміг відкрити дисплей для '%s': в�
 msgid "wxWidgets could not open display. Exiting."
 msgstr "wxWidgets не вдалося відкрити дисплей. Завершення роботи."
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextsymboldlg.cpp:434
 msgid "xxxx"
 msgstr ""
@@ -27558,6 +27694,7 @@ msgstr "вчора"
 msgid "zlib error %d"
 msgstr "помилка zlib %d"
 
+# DrFOXUA: do not translate
 #: ../src/richtext/richtextliststylepage.cpp:496 ../src/richtext/richtextbulletspage.cpp:288
 msgid "~"
 msgstr ""
