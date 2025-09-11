@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer 2.9.3-rc1_UK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-05 15:48+0200\n"
-"PO-Revision-Date: 2025-09-11 01:39+0300\n"
+"PO-Revision-Date: 2025-09-11 22:12+0300\n"
 "Last-Translator: DrFOXUA <doctor13ua@gmail.com>\n"
 "Language-Team: FoxSoft <doctor13ua@gmail.com>\n"
 "Language: uk_UA\n"
@@ -22,6 +22,7 @@ msgstr ""
 "X-Poedit-Basepath: CPP\n"
 "X-Poedit-Flags-xgettext: --add-comments\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Bookmarks: 5347,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. DrFOX: В исходнике НЕ найдено для перевода, в программе НЕ переведено
@@ -1378,13 +1379,14 @@ msgstr "Назва принтера"
 msgid "HTTPS CA File"
 msgstr "Файл сертифікату CA"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:452
 msgid ""
 "Custom CA certificate file can be specified for HTTPS OctoPrint connections, in crt/pem format. If left blank, the default OS "
 "CA certificate repository is used."
 msgstr ""
-"Настроюваний файл сертифіката CA можна вказати для з'єднань HTTPS OctoPrint у форматі crt/pem. Якщо залишити це поле порожнім, "
-"буде використано типове сховище сертифікатів OS CA."
+"Для з'єднань HTTPS OctoPrint можна вказати власний файл сертифіката СА у форматі crt/pem. Якщо залишити поле порожнім, буде "
+"використано сховище сертифікатів за замовчуванням OS CA."
 
 #: src/libslic3r/PrintConfig.cpp:461 src/slic3r/GUI/ConfigSnapshotDialog.cpp:31
 msgid "User"
@@ -1417,7 +1419,7 @@ msgstr "Імена профілів, пов'язаних із фізичним �
 
 #: src/libslic3r/PrintConfig.cpp:491
 msgid "Authorization Type"
-msgstr "Тип авторизації"
+msgstr "Тип Авторизації"
 
 #: src/libslic3r/PrintConfig.cpp:494
 msgid "API key"
@@ -2020,10 +2022,12 @@ msgstr ""
 "Цей прапорець дозволяє автоматичну логіку охолодження, яка регулює швидкість друку та швидкість вентиляції відповідно до часу "
 "друку шару."
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:948
 msgid "Cooling slowdown logic"
 msgstr "Логіка уповільнення охолодження"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:949
 msgid ""
 "Determines how the printer slows down layer printing when the minimum layer time isn't reached. 'Consistent surface' first "
@@ -2031,19 +2035,20 @@ msgid ""
 "it also slows down those first two perimeters. 'Uniform cooling' slows down all print features, including the first two "
 "perimeters."
 msgstr ""
-"Визначає, як принтер уповільнює друк шарів, якщо мінімальний час друку шару не досягнуто. \n"
-"- 'Постійна поверхня' спочатку намагається зберегти швидкість друку перших двох периметрів, сповільнюючи всі інші "
-"характеристики. \n"
-"   Тільки якщо цього недостатньо, він також уповільнює ці перші два периметри. \n"
-"- 'Рівномірне охолодження' уповільнює всі елементи друку, включно з першими двома периметрами."
+"Визначає, як принтер сповільнює друк шарів, якщо не досягнуто мінімального часу друку шару.\n"
+"- 'Послідовна поверхня' спочатку намагається зберегти швидкість друку перших двох периметрів, сповільнюючи всі інші функції. "
+"Лише якщо цього недостатньо, вона також сповільнює перші два периметри.\n"
+"- 'Рівномірне охолодження1 сповільнює всі функції друку, включно з першими двома периметрами."
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:954
 msgid "Uniform cooling"
 msgstr "Рівномірне охолодження"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:955
 msgid "Consistent surface"
-msgstr "Постійна поверхня"
+msgstr "Послідовна поверхня"
 
 #: src/libslic3r/PrintConfig.cpp:960
 msgid "Perimeter transition distance"
@@ -2807,13 +2812,14 @@ msgstr ""
 msgid "Fill angle"
 msgstr "Кут друку заповнення"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:1547
 msgid ""
 "Default base angle for infill orientation. Cross-hatching will be applied to this. Bridges will be infilled using the best "
 "direction Slic3r can detect, so this setting does not affect them."
 msgstr ""
-"Основний кут орієнтаціїзаповнення за замовчуванням. Для цього буде застосовуватися крос-штрих. Мости будуть заповнені, "
-"використовуючи найкращий напрям, який може виявити PrusaSlicer, тому цей параметр на них не впливає."
+"Основний кут орієнтації заповнення за замовчуванням. Для цього буде застосовуватися крос-штрих. Мости будуть заповнені, "
+"використовуючи найкращий напрямок, який може виявити PrusaSlicer, тому цей параметр на них не впливає."
 
 #: src/libslic3r/PrintConfig.cpp:1558
 msgid "Fill density"
@@ -2917,6 +2923,7 @@ msgstr ""
 "\n"
 "Якщо поставити 0, то PrusaSlicer не буде додавати команди на встановлення температури столу до генерованого G-коду."
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:1639
 msgid ""
 "Set this to a non-zero value to set a manual extrusion width for first layer. You can use this to force fatter extrudates for "
@@ -2925,7 +2932,7 @@ msgid ""
 msgstr ""
 "Встановіть ненульове значення, щоб встановити ручну ширину екструзії для першого шару. Ви можете використовувати цю опцію з "
 "метою навмисного пом'якшення екструдату для кращої адгезії. Якщо вона виражена у відсотках (наприклад, 120%), вона буде "
-"обчислена за висотою першого шару. Якщо встановлено на 0 - використовуватиме стандартну ширину екструзії."
+"обчислена за висотою першого шару. Якщо встановлено на 0, буде використано ширину екструзії за замовчуванням."
 
 #: src/libslic3r/PrintConfig.cpp:1651 src/slic3r/GUI/ConfigManipulation.cpp:125
 msgid "First layer height"
@@ -5367,10 +5374,11 @@ msgstr ""
 msgid "Enable variable layer height feature"
 msgstr "Увімкнути функцію шарів змінної висоти"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:3736
 msgid "Some printers or printer setups may have difficulties printing with a variable layer height. Enabled by default."
 msgstr ""
-"Деякі принтери або налаштування принтера можуть мати труднощі з друкуванням шарів змінної висоти. Увімкнено за умовчанням."
+"Деякі принтери або налаштування принтера можуть мати труднощі з друкуванням шарів змінної висоти. Увімкнено за замовчуванням."
 
 #: src/libslic3r/PrintConfig.cpp:3742
 msgid "Prefer clockwise movements"
@@ -5793,9 +5801,10 @@ msgstr ""
 msgid "Critical angle"
 msgstr "Критичний кут"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:4212
 msgid "The default angle for connecting support sticks and junctions."
-msgstr "Кут за замовчуванням для з'єднання опорних палочок і з'єднань."
+msgstr "Кут за замовчуванням для з'єднання опорних стійок і з'єднань."
 
 #: src/libslic3r/PrintConfig.cpp:4220
 msgid "Max bridge length"
@@ -6247,17 +6256,19 @@ msgstr "Розрив між дном об’єкта та генерованою
 msgid "Pad object connector stride"
 msgstr "Крок опор Підкладка-Об'єкт"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:4739
 msgid "Distance between two connector sticks which connect the object and the generated pad."
-msgstr "Відстань між двома з'єднувальними паличками, які з'єднують об'єкт та генеровану підкладку."
+msgstr "Відстань між двома з'єднувачами, які з'єднують об'єкт і згенеровану підкладку."
 
 #: src/libslic3r/PrintConfig.cpp:4746
 msgid "Pad object connector width"
 msgstr "Ширина з'єднувача Підкладка-Об'єкт"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:4748
 msgid "Width of the connector sticks which connect the object and the generated pad."
-msgstr "Ширина з'єднувальної паличками, що з'єднує об'єкт та генеровану підкладку."
+msgstr "Ширина між двома з'єднувачами, які з'єднують об'єкт і згенеровану підкладку."
 
 #: src/libslic3r/PrintConfig.cpp:4755
 msgid "Pad object connector penetration"
@@ -6495,25 +6506,29 @@ msgstr ""
 "Завантажити конфігурацію із зазначеного файлу. Його можна використовувати більше одного разу для завантаження опцій з "
 "декількох файлів."
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:5777
 msgid "Help"
-msgstr "Допомога"
+msgstr "Довідка"
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:5778
 msgid "Show this help."
-msgstr "Показати цю підказку."
+msgstr "Показати цю довідку."
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:5783
 msgid "Help (FFF options)"
-msgstr "Допомога (FFF параметри)"
+msgstr "Довідка (FFF параметри)"
 
 #: src/libslic3r/PrintConfig.cpp:5784
 msgid "Show the full list of print/G-code configuration options."
 msgstr "Показати повний список параметрів конфігурації друку / G-коду."
 
+# +++
 #: src/libslic3r/PrintConfig.cpp:5788
 msgid "Help (SLA options)"
-msgstr "Допомога (параметри SLA)"
+msgstr "Довідка (параметри SLA)"
 
 #: src/libslic3r/PrintConfig.cpp:5789
 msgid "Show the full list of SLA print configuration options."
@@ -7984,9 +7999,10 @@ msgstr "Значення таке ж, як системне"
 msgid "Value was changed and is not equal to the system value or the last saved preset"
 msgstr "Значення було змінено і не дорівнює системному значенню або останньому збереженому профілю"
 
+# +++
 #: src/slic3r/GUI/ButtonsDescription.cpp:159
 msgid "Default palette for mode markers"
-msgstr "Палітра маркерів режиму інтерфейсу"
+msgstr "Стандартна палітра для маркерів режиму інтерфейсу"
 
 # DrFOX: Режим інтерфейса
 #: src/slic3r/GUI/ButtonsDescription.cpp:167
@@ -8987,9 +9003,10 @@ msgstr "Показати"
 msgid "Show background"
 msgstr "Показати фон"
 
+# +++
 #: src/slic3r/GUI/DoubleSliderForLayers.cpp:804
 msgid "Use default colors"
-msgstr "Використовувати стандартні кольори"
+msgstr "Використовувати кольори за замовчуванням"
 
 #: src/slic3r/GUI/DoubleSliderForLayers.cpp:809
 msgid "Set auto color changes"
@@ -13247,25 +13264,30 @@ msgstr "Помилок не виявлено"
 msgid "Remaining errors"
 msgstr "Залишилося помилок"
 
+# +++
 #: src/slic3r/GUI/GUI_ObjectList.cpp:501
 msgid "Right button click the icon to fix STL by Windows repair algorithm"
-msgstr "Клацніть кнопкою миші на значок, щоб виправити файл .STL за допомогою алгоритмів Windows"
+msgstr "Клацніть правою кнопкою миші по значку, щоб виправити .STL за допомогою алгоритму відновлення Windows"
 
+# +++
 #: src/slic3r/GUI/GUI_ObjectList.cpp:547
 msgid "Right button click the icon to change the object settings"
-msgstr "Клацніть правою кнопкою миші на піктограмі, щоб змінити налаштування об'єкта"
+msgstr "Клацніть правою кнопкою миші на іконці, щоб змінити налаштування об'єкта"
 
+# +++
 #: src/slic3r/GUI/GUI_ObjectList.cpp:549
 msgid "Click the icon to change the object settings"
-msgstr "Клацніть на піктограмі, щоб змінити налаштування об'єкта"
+msgstr "Натисніть на іконку, щоб змінити налаштування об'єкта"
 
+# +++
 #: src/slic3r/GUI/GUI_ObjectList.cpp:553
 msgid "Right button click the icon to change the object printable property"
-msgstr "Клацніть правою кнопкою миші на піктограмі, щоб змінити властивість друку для об'єкта"
+msgstr "Клацніть правою кнопкою миші на іконці, щоб змінити властивість друку об'єкта"
 
+# +++
 #: src/slic3r/GUI/GUI_ObjectList.cpp:555
 msgid "Click the icon to change the object printable property"
-msgstr "Клацніть на піктограмі, щоб змінити властивість друку для об'єкта"
+msgstr "Натисніть на іконку, щоб змінити властивість об'єкта для друку"
 
 #: src/slic3r/GUI/GUI_ObjectList.cpp:681
 msgid "Change Extruder"
@@ -13335,6 +13357,7 @@ msgstr "Помилка!"
 msgid "Add Generic Subobject"
 msgstr "Додати Загальний Підоб'єкт"
 
+# Обший для всех подобїект
 #: src/slic3r/GUI/GUI_ObjectList.cpp:1737
 msgid "Generic"
 msgstr "Підоб'єкт"
@@ -14007,13 +14030,15 @@ msgstr "Надіслання G-коду"
 msgid "Export config"
 msgstr "Експорт конфігурації"
 
+# +++
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:104 src/slic3r/GUI/Sidebar.cpp:482
 msgid "Export to SD card / Flash drive"
-msgstr "Експорт на SD-карту/флешку"
+msgstr "Експорт на SD-карту/Флешку"
 
+# +++
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:105
 msgid "Eject SD card / Flash drive"
-msgstr "Від'єднати SD-карту/флешку"
+msgstr "Від'єднати SD-карту/Флешку"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:107
 msgid "Select all objects"
@@ -14027,6 +14052,7 @@ msgstr "Скасувати весь вибір"
 msgid "Delete selected"
 msgstr "Видалити вибране"
 
+# +++
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:114
 msgid "Paste from clipboard"
 msgstr "Вставити з буферу обміну"
@@ -14238,7 +14264,7 @@ msgstr "Зміна типу камери (перспективна, орфогр
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:175
 msgid "Zoom to Bed"
-msgstr "Приблизити до розміру столу"
+msgstr "Приблизити до розміру Столу"
 
 #: src/slic3r/GUI/KBShortcutsDialog.cpp:176
 msgid ""
@@ -14912,9 +14938,10 @@ msgstr "Перетворити файл G-коду з двійкового фо�
 msgid "&Convert"
 msgstr "Перетворити"
 
+# +++
 #: src/slic3r/GUI/MainFrame.cpp:1571
 msgid "Ejec&t SD Card / Flash Drive"
-msgstr "Від'єднати SD-карту/флешку"
+msgstr "Від'єднати SD-карту/Флешку"
 
 #: src/slic3r/GUI/MainFrame.cpp:1571
 msgid "Eject SD card / Flash drive after the G-code was exported to it."
@@ -15144,9 +15171,10 @@ msgstr "Вид"
 msgid "&Configuration"
 msgstr "Конфігурація"
 
+# +++
 #: src/slic3r/GUI/MainFrame.cpp:1758 src/slic3r/GUI/MainFrame.cpp:1773 src/slic3r/GUI/MainFrame.cpp:1868
 msgid "&Help"
-msgstr "Допомога"
+msgstr "Довідка"
 
 #: src/slic3r/GUI/MainFrame.cpp:1818
 msgid "&Open G-code"
@@ -16396,7 +16424,7 @@ msgstr "Надіслати на принтер"
 
 #: src/slic3r/GUI/Plater.cpp:7466
 msgid "Paste From Clipboard"
-msgstr "Вставити з буферу обміну"
+msgstr "Вставити з Буферу обміну"
 
 #: src/slic3r/GUI/Preferences.cpp:283 src/slic3r/GUI/Tab.cpp:2689 src/slic3r/GUI/Tab.cpp:3011 src/slic3r/GUI/Tab.cpp:3152
 #: src/slic3r/GUI/UnsavedChangesDialog.cpp:1336 src/slic3r/GUI/UnsavedChangesDialog.cpp:1914
@@ -16741,7 +16769,7 @@ msgstr "Тільки реліз"
 
 #: src/slic3r/GUI/Preferences.cpp:586
 msgid "Use custom size for toolbar icons"
-msgstr "Використовувати користувацький розмір для значків панелі інструментів"
+msgstr "Налаштувати розмір значків панелі інструментів"
 
 #: src/slic3r/GUI/Preferences.cpp:587
 msgid "If enabled, you can change size of toolbar icons manually."
@@ -16842,13 +16870,15 @@ msgstr ""
 "Зміна деяких налаштувань призведе до перезапуску програми.\n"
 "Вміст столу буде втрачено."
 
+# +++
 #: src/slic3r/GUI/Preferences.cpp:953
 msgid "Icon size in a respect to the default size"
-msgstr "Розмір піктограми відносно розміру за промовчанням"
+msgstr "Розмір значків по відношенню до розміру за замовчуванням"
 
+# +++
 #: src/slic3r/GUI/Preferences.cpp:968
 msgid "Select toolbar icon size in respect to the default one."
-msgstr "Вибрати розмір піктограми панелі інструментів щодо розміру за замовчуванням."
+msgstr "Вибрати розмір значків панелі інструментів щодо розміру за замовчуванням."
 
 #: src/slic3r/GUI/Preferences.cpp:1003
 msgid "Layout Options"
@@ -17600,9 +17630,10 @@ msgstr "Кількість змін інструменту"
 msgid "Send to Connect"
 msgstr "Надіслати в 'Prusa Connect'"
 
+# +++
 #: src/slic3r/GUI/Sidebar.cpp:531
 msgid "Export all to SD card / Flash drive"
-msgstr "Експортувати все на SD-карту / USB-накопичувач"
+msgstr "Експортувати все на SD-карту / Флешку"
 
 #: src/slic3r/GUI/Sidebar.cpp:532
 msgid "Export all G-codes"
@@ -17992,6 +18023,7 @@ msgstr "Параметри зміни екструдера в багато-ек�
 msgid "Volumetric flow hints not available"
 msgstr "Підказки об'ємного потоку відсутні"
 
+# +++
 #: src/slic3r/GUI/Tab.cpp:2650
 msgid ""
 "Note: All parameters from this group are moved to the Physical Printer settings (see changelog).\n"
@@ -18003,9 +18035,9 @@ msgid ""
 msgstr ""
 "Примітка: Усі параметри з цієї групи переміщено до налаштувань фізичного принтера (див. Журнал змін).\n"
 "\n"
-"Новий профіль фізичного принтера створюється натисканням на піктограму \"гвинтик\" праворуч від списку \"Профілі принтера\", "
+"Новий профіль фізичного принтера створюється натисканням на іконку \"гвинтик\" праворуч від списку \"Профілі принтера\", "
 "вибором пункту \"Додати фізичний принтер\" у списку принтера. Редактор профілю фізичного принтера відкривається також при "
-"натисканні на піктограму \"гвинтик\" на вкладці \"Параметри принтеру\". Профілі фізичного принтера зберігаються в каталозі "
+"натисканні на іконку \"гвинтик\" на вкладці \"Параметри принтеру\". Профілі фізичного принтера зберігаються в каталозі "
 "\"PrusaSlicer/physical_printer\".\n"
 "Примітка:\n"
 "Конфігураційна папка 'За замовчуванням' - (C:\\Users\\-Ім'я Користувача-\\AppData\\Roaming\\PrusaSlicer)"
@@ -18092,13 +18124,15 @@ msgstr "Експозиція"
 msgid "Output"
 msgstr "Вихідний Файл"
 
+# +++
 #: src/slic3r/GUI/Tab.cpp:3186
 msgid "Values in this column are for Normal mode"
-msgstr "Значення в цьому стовпці для нормального режиму"
+msgstr "Значення в цьому стовпці для Нормального режиму"
 
+# +++
 #: src/slic3r/GUI/Tab.cpp:3187
 msgid "Values in this column are for Stealth mode"
-msgstr "Значення в цьому стовпці для тихого режиму"
+msgstr "Значення в цьому стовпці для Тихого режиму"
 
 #: src/slic3r/GUI/Tab.cpp:3194
 msgid "Maximum feedrates"
@@ -18432,9 +18466,10 @@ msgstr "Головка підтримки"
 msgid "Support pillar"
 msgstr "Стовп підтримки"
 
+# +++
 #: src/slic3r/GUI/Tab.cpp:5827
 msgid "Connection of the support sticks and junctions"
-msgstr "З'єднання опорних стовпів і стиків"
+msgstr "З'єднання опорних стійок і з'єднань"
 
 #: src/slic3r/GUI/Tab.cpp:5853 src/slic3r/GUI/Tab.cpp:5995
 msgid "Branching"
@@ -20154,9 +20189,10 @@ msgstr "Застосувати"
 msgid "&Apply Style"
 msgstr "Застосувати стиль"
 
+# +++
 #: ../src/msw/mdi.cpp:179
 msgid "&Arrange Icons"
-msgstr "Розташувати піктограми"
+msgstr "Впорядкувати Іконки"
 
 #: ../src/common/stockitem.cpp:195
 msgid "&Ascending"
@@ -20897,7 +20933,7 @@ msgstr ""
 
 #: ../src/generic/dbgrptg.cpp:318
 msgid "A debug report has been generated in the directory\n"
-msgstr "Звіт про помилку сформовано у теці\n"
+msgstr "У каталозі згенеровано звіт про налагодження\n"
 
 #: ../src/common/debugrpt.cpp:573
 msgid "A debug report has been generated. It can be found in"
@@ -21026,13 +21062,15 @@ msgstr ""
 msgid "ActiveCaption"
 msgstr ""
 
+# +++
 #: ../src/common/stockitem.cpp:207
 msgid "Actual Size"
-msgstr "Фактичний розмір"
+msgstr "Фактичний Розмір"
 
+# +++
 #: ../src/richtext/richtextbuffer.cpp:11455
 msgid "Add Column"
-msgstr "Додати стовпчик"
+msgstr "Додати Стовпчик"
 
 #: ../src/richtext/richtextbuffer.cpp:11392
 msgid "Add Row"
@@ -21218,9 +21256,10 @@ msgstr "B6 Конверт, 176 x 125 мм"
 msgid "BMP: Couldn't allocate memory."
 msgstr "BMP: Не вдалося виділити пам'ять."
 
+# +++
 #: ../src/common/imagbmp.cpp:100
 msgid "BMP: Couldn't save invalid image."
-msgstr "BMP: Не можу записати помилкове зображення."
+msgstr "BMP: Не вдалося зберегти неприпустиме зображення."
 
 #: ../src/common/imagbmp.cpp:356
 msgid "BMP: Couldn't write RGB color map."
@@ -21434,9 +21473,10 @@ msgstr "Не вдалося копіювати значення непідтри
 msgid "Can't create registry key '%s'"
 msgstr "Не вдалося створити ключ реєстру '%s'"
 
+# +++
 #: ../src/msw/thread.cpp:665
 msgid "Can't create thread"
-msgstr "Не вдалося створити нитку"
+msgstr "Не вдається створити потік"
 
 #: ../src/msw/window.cpp:3691
 msgid "Can't create window of class %s"
@@ -21514,9 +21554,10 @@ msgstr "Не вдалося записати зображення до файл�
 msgid "Can't save log contents to file."
 msgstr "Не можу записати вміст журналу в файл."
 
+# +++
 #: ../src/msw/thread.cpp:629
 msgid "Can't set thread priority"
-msgstr "Не вдалося встановити пріоритет нитки"
+msgstr "Не вдається встановити пріоритет потоку"
 
 #: ../src/msw/registry.cpp:896 ../src/msw/registry.cpp:938 ../src/msw/registry.cpp:1081
 msgid "Can't set value of '%s'"
@@ -21574,9 +21615,10 @@ msgstr "Не вдалося ініціювати OLE"
 msgid "Cannot initialize sockets"
 msgstr "Не вдалося ініціювати сокети"
 
+# +++
 #: ../src/msw/volume.cpp:619
 msgid "Cannot load icon from '%s'."
-msgstr "Не вдалося завантажити піктограму з '%s'."
+msgstr "Не вдається завантажити іконку з '%s'."
 
 #: ../src/xrc/xmlres.cpp:360
 msgid "Cannot load resources from '%s'."
@@ -21618,29 +21660,35 @@ msgstr "Не вдалося надрукувати порожню сторінк
 msgid "Cannot read typename from '%s'!"
 msgstr "Не вдалося прочитати назву типу з '%s'!"
 
+# +++
 #: ../src/msw/thread.cpp:888
 msgid "Cannot resume thread %lx"
-msgstr "Не вдалося відновити нитку %lx"
+msgstr "Не вдається відновити потік %lx"
 
+# +++
 #: ../src/unix/threadpsx.cpp:1016
 msgid "Cannot retrieve thread scheduling policy."
-msgstr "Не вдалося встановити порядок нитки."
+msgstr "Не вдається отримати політику планування потоків."
 
+# +++
 #: ../src/common/intl.cpp:558
 msgid "Cannot set locale to language \"%s\"."
-msgstr "Не вдалося встановити локаль у значення '%s'."
+msgstr "Не вдається встановити локаль на мову \"%s\"."
 
+# +++
 #: ../src/unix/threadpsx.cpp:831 ../src/msw/thread.cpp:546
 msgid "Cannot start thread: error writing TLS."
-msgstr "Не вдалося запустити нитку: помилка запису TLS."
+msgstr "Не вдається запустити потік: помилка запису TLS."
 
+# +++
 #: ../src/msw/thread.cpp:872
 msgid "Cannot suspend thread %lx"
-msgstr "Не вдалося зупинити нитку %lx"
+msgstr "Не вдається призупинити потік %lx"
 
+# +++
 #: ../src/msw/thread.cpp:794
 msgid "Cannot wait for thread termination"
-msgstr "Не вдалося дочекатись закінчення нитки"
+msgstr "Неможливо дочекатися завершення потоку"
 
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:75
@@ -21657,9 +21705,10 @@ msgstr ""
 msgid "Case sensitive"
 msgstr "З врахуванням регістру"
 
+# +++
 #: ../src/propgrid/manager.cpp:1509
 msgid "Categorized Mode"
-msgstr "Режим з категоризацією"
+msgstr "Режим з Категоризацією"
 
 #: ../src/richtext/richtextbuffer.cpp:9968
 msgid "Cell Properties"
@@ -21951,9 +22000,10 @@ msgstr "Діалогове вікно вибору кольору повідом
 msgid "Colour:"
 msgstr "Колір:"
 
+# +++
 #: ../src/generic/datavgen.cpp:6077
 msgid "Column %u"
-msgstr "Колонка %u"
+msgstr "Стовпчик %u"
 
 #. TRANSLATORS: Name of keyboard key
 #: ../src/common/accelcmn.cpp:114
@@ -22018,6 +22068,7 @@ msgstr "Перетворення до набору символів '%s' не п
 msgid "Convert"
 msgstr "Перетворити"
 
+# +++
 #: ../src/html/htmlwin.cpp:1079
 msgid "Copied to clipboard:\"%s\""
 msgstr "Скопійовано до буфера обміну:\"%s\""
@@ -22058,6 +22109,7 @@ msgstr "Не вдалося ініціалізувати libnotify."
 msgid "Could not locate file '%s'."
 msgstr "Не вдалося знайти розташування файла '%s'."
 
+# +++
 #: ../src/common/filefn.cpp:1403
 msgid "Could not set current working directory"
 msgstr "Не вдалося вказати поточний робочий каталог"
@@ -22087,9 +22139,10 @@ msgstr "Не вдалося створити контекст OpenGL"
 msgid "Couldn't create a timer"
 msgstr "Не вдалося створити таймер"
 
+# +++
 #: ../src/osx/carbon/overlay.cpp:122
 msgid "Couldn't create the overlay window"
-msgstr "Не вдалося створити вікно оверлею"
+msgstr "Не вдалося створити вікно накладання"
 
 #: ../src/common/translation.cpp:2024
 msgid "Couldn't enumerate translations"
@@ -22099,58 +22152,70 @@ msgstr "Не вдалося пронумерувати переклади"
 msgid "Couldn't find symbol '%s' in a dynamic library"
 msgstr "Не вдалося знайти символ '%s' в динамічній бібліотеці"
 
+# +++
 #: ../src/msw/thread.cpp:915
 msgid "Couldn't get the current thread pointer"
-msgstr "Не вдалося отримати показник на дану нитку"
+msgstr "Не вдалося отримати вказівник поточного потоку"
 
+# +++
 #: ../src/osx/carbon/overlay.cpp:129
 msgid "Couldn't init the context on the overlay window"
-msgstr "Не вдалося ініціювати контекст вікна оверлею"
+msgstr "Не вдалося ініціювати контекст у вікні накладання"
 
+# +++
 #: ../src/common/imaggif.cpp:244
 msgid "Couldn't initialize GIF hash table."
-msgstr "Не вдалося ініціалізувати таблицю хешів GIF."
+msgstr "Не вдалося ініціалізувати таблицю хешів .GIF."
 
+# +++
 #: ../src/common/imagpng.cpp:409
 msgid "Couldn't load a PNG image - file is corrupted or not enough memory."
-msgstr "Не вдалося завантажити зображення PNG. Можливо файл пошкоджено або не вистачає пам'яті."
+msgstr "Не вдалося завантажити зображення .PNG. Можливо файл пошкоджено або не вистачає пам'яті."
 
+# +++
 #: ../src/unix/sound.cpp:470
 msgid "Couldn't load sound data from '%s'."
-msgstr "Не вдалося завантажити піктограму з '%s'."
+msgstr "Не вдалося завантажити звукові дані з '%s'."
 
 #: ../src/msw/dirdlg.cpp:435
 msgid "Couldn't obtain folder name"
-msgstr "Не вдалося отримати назву теки"
+msgstr "Не вдалося отримати ім'я папки"
 
 #: ../src/unix/sound_sdl.cpp:229
 msgid "Couldn't open audio: %s"
 msgstr "Не вдалося відкрити аудіо: '%s'"
 
+# +++
 #: ../src/msw/ole/dataobj.cpp:377
 msgid "Couldn't register clipboard format '%s'."
 msgstr "Не вдалося зареєструвати формат буфера обміну '%s'."
 
+# +++
 #: ../src/msw/listctrl.cpp:869
 msgid "Couldn't retrieve information about list control item %d."
-msgstr "Не вдалося встановити інформацію про елемент списку %d."
+msgstr "Не вдалося отримати інформацію про елемент керування списком %d."
 
+# +++
 #: ../src/common/imagpng.cpp:498 ../src/common/imagpng.cpp:509 ../src/common/imagpng.cpp:519
 msgid "Couldn't save PNG image."
-msgstr "Не вдалося записати зображення PNG."
+msgstr "Не вдалося зберегти зображення у форматі PNG."
 
+# +++
 #: ../src/msw/thread.cpp:684
 msgid "Couldn't terminate thread"
 msgstr "Не вдалося завершити потік"
 
+# +++
 #: ../src/common/xtistrm.cpp:166
 msgid "Create Parameter %s not found in declared RTTI Parameters"
-msgstr "Параметр Create %s не знайдено серед описаних параметрів RTTI"
+msgstr "Створити Параметр %s, який не знайдено в оголошених параметрах RTTI"
 
+# +++
 #: ../src/generic/dirdlgg.cpp:288
 msgid "Create directory"
 msgstr "Створити каталог"
 
+# +++
 #: ../src/generic/filedlgg.cpp:212 ../src/generic/dirdlgg.cpp:111
 msgid "Create new directory"
 msgstr "Створити новий каталог"
@@ -22173,13 +22238,15 @@ msgstr "Вирізати"
 msgid "Current directory:"
 msgstr "Поточний каталог:"
 
+# +++
 #: ../src/gtk/print.cpp:217
 msgid "Custom size"
-msgstr "Нетиповий розмір"
+msgstr "Індивідуальний розмір"
 
+# +++
 #: ../src/common/headerctrlcmn.cpp:60
 msgid "Customize Columns"
-msgstr "Налаштувати стовпчики"
+msgstr "Налаштувати Стовпці"
 
 #: ../src/common/stockitem.cpp:259
 msgid "Cut selection"
@@ -22197,17 +22264,20 @@ msgstr "Аркуш D, 22 x 34 дюйм"
 msgid "DDE poke request failed"
 msgstr "Помилка читання DDE"
 
+# +++
 #: ../src/common/imagbmp.cpp:1169
 msgid "DIB Header: Encoding doesn't match bitdepth."
-msgstr "Заголовок DIB: Кодування не відповідає глибині бітів."
+msgstr "DIB-заголовок: Кодування не відповідає розрядності."
 
+# +++
 #: ../src/common/imagbmp.cpp:1074
 msgid "DIB Header: Image height > 32767 pixels for file."
-msgstr "Заголовок DIB: Висота картинки у файлі > 32767 пікселів."
+msgstr "Заголовок DIB: Висота зображення у файлі > 32767 пікселів."
 
+# +++
 #: ../src/common/imagbmp.cpp:1066
 msgid "DIB Header: Image width > 32767 pixels for file."
-msgstr "Заголовок DIB: ширина картинки у файлі > 32767 пікселів."
+msgstr "Заголовок DIB: ширина зображення у файлі > 32767 пікселів."
 
 #: ../src/common/imagbmp.cpp:1094
 msgid "DIB Header: Unknown bitdepth in file."
@@ -22246,13 +22316,15 @@ msgstr "Десятковий"
 msgid "Decorative"
 msgstr "Декоративний"
 
+# +++
 #: ../src/common/fmapbase.cpp:796
 msgid "Default encoding"
-msgstr "Типове кодування"
+msgstr "Кодування за замовчуванням"
 
+# +++
 #: ../src/generic/prntdlgg.cpp:510
 msgid "Default printer"
-msgstr "Типова друкарка"
+msgstr "Принтер за замовчуванням"
 
 # DrFOXUA: do not translate
 #. TRANSLATORS: Name of keyboard key
@@ -22557,7 +22629,7 @@ msgstr "Помилка створення каталогу"
 
 #: ../src/common/imagbmp.cpp:1181
 msgid "Error in reading image DIB."
-msgstr "Помилка під час читання картинки DIB."
+msgstr "Помилка під час читання зображення .DIB."
 
 #: ../src/propgrid/propgrid.cpp:6696
 msgid "Error in resource: %s"
@@ -22641,11 +22713,12 @@ msgstr ""
 #. TRANSLATORS: Label of font face name
 #: ../src/propgrid/advprops.cpp:672
 msgid "Face Name"
-msgstr "Шрифт"
+msgstr ""
 
+# +++
 #: ../src/unix/snglinst.cpp:269
 msgid "Failed to access lock file."
-msgstr "Не вдалося отримати доступ до файла замка."
+msgstr "Не вдалося отримати доступ до файлу ключа."
 
 #: ../src/unix/epolldispatcher.cpp:116
 msgid "Failed to add descriptor %d to epoll descriptor %d"
@@ -22653,7 +22726,7 @@ msgstr "Не вдалося додати дескриптор %d в дескри
 
 #: ../src/msw/dib.cpp:489
 msgid "Failed to allocate %luKb of memory for bitmap data."
-msgstr "Не вдалося виділити %lu кБ пам'яті для даних растрової картинки."
+msgstr "Не вдалося виділити %lu кБ пам'яті для даних зображення."
 
 #: ../src/common/glcmn.cpp:115
 msgid "Failed to allocate colour for OpenGL"
@@ -22663,9 +22736,10 @@ msgstr "Не вдалося виділити колір для OpenGL"
 msgid "Failed to change video mode"
 msgstr "Не вдалося змінити відео режим"
 
+# +++
 #: ../src/common/image.cpp:3277
 msgid "Failed to check format of image file \"%s\"."
-msgstr "Не вдалося перевірити формат файла зображення '%s'."
+msgstr "Не вдалося перевірити формат файлу зображення '%s'."
 
 #: ../src/common/debugrpt.cpp:239
 msgid "Failed to clean up debug report directory \"%s\""
@@ -22679,6 +22753,7 @@ msgstr "Не вдалося закрити обробку файла"
 msgid "Failed to close lock file '%s'"
 msgstr "Не вдалося закрити файла замка '%s'"
 
+# +++
 #: ../src/msw/clipbrd.cpp:112
 msgid "Failed to close the clipboard."
 msgstr "Не вдалося закрити буфер обміну."
@@ -22699,9 +22774,10 @@ msgstr "Не вдалося додзвонитись: відсутній інт�
 msgid "Failed to convert file \"%s\" to Unicode."
 msgstr "Не вдалося перетворити вміст файла '%s' на Unicode."
 
+# +++
 #: ../src/generic/logg.cpp:956
 msgid "Failed to copy dialog contents to the clipboard."
-msgstr "Не вдалося скопіювати вміст діалогового вікна до буфера."
+msgstr "Не вдалося скопіювати вміст діалогового вікна до буфера обміну."
 
 #: ../src/msw/registry.cpp:692
 msgid "Failed to copy registry value '%s'"
@@ -22779,9 +22855,10 @@ msgstr "Не вдалося створити канал повернення з�
 msgid "Failed to display HTML document in %s encoding"
 msgstr "Не вдалося показати документ HTML у кодуванні %s"
 
+# +++
 #: ../src/msw/clipbrd.cpp:124
 msgid "Failed to empty the clipboard."
-msgstr "Не вдалося почистити clipboard."
+msgstr "Не вдалося очистити буфер обміну."
 
 #: ../src/unix/displayx11.cpp:212
 msgid "Failed to enumerate video modes"
@@ -22799,9 +22876,10 @@ msgstr "Не вдалося додзвонитись: %s"
 msgid "Failed to execute '%s'\n"
 msgstr "Не вдалося виконати '%s'\n"
 
+# +++
 #: ../src/common/debugrpt.cpp:720
 msgid "Failed to execute curl, please install it in PATH."
-msgstr "Не вдалося виконати curl, будь ласка, встановіть його у теці вказаній у PATH."
+msgstr "Не вдалося виконати curl, будь ласка, встановіть його у PATH."
 
 #: ../src/msw/ole/automtn.cpp:505
 msgid "Failed to find CLSID of \"%s\""
@@ -22819,6 +22897,7 @@ msgstr "Не вдалося отримати номеру ISP: %s"
 msgid "Failed to get OLE automation interface for \"%s\""
 msgstr "Не вдалося отримати інтерфейс автоматичної обробки OLE для '%s'"
 
+# +++
 #: ../src/msw/clipbrd.cpp:711
 msgid "Failed to get data from the clipboard"
 msgstr "Не вдалося отримати дані з буфера обміну"
@@ -22827,6 +22906,7 @@ msgstr "Не вдалося отримати дані з буфера обмін
 msgid "Failed to get the local system time"
 msgstr "Не вдалося отримати локальний системний час"
 
+# +++
 #: ../src/common/filefn.cpp:1345
 msgid "Failed to get the working directory"
 msgstr "Не вдалося отримати робочий каталог"
@@ -22847,9 +22927,10 @@ msgstr "Не вдалося ініціалізувати OpenGL"
 msgid "Failed to initiate dialup connection: %s"
 msgstr "Не вдалося ініціалізувати комутоване з’єднання: %s"
 
+# +++
 #: ../src/gtk/textctrl.cpp:1128
 msgid "Failed to insert text in the control."
-msgstr "Не вдалося додати текст до контрола."
+msgstr "Не вдалося вставити текст в елемент управління."
 
 #: ../src/unix/snglinst.cpp:241
 msgid "Failed to inspect the lock file '%s'"
@@ -22859,9 +22940,10 @@ msgstr "Не вдалося перевірити файл замка '%s'."
 msgid "Failed to install signal handler"
 msgstr "Не вдалося встановити інструмент обробки сигналу"
 
+# +++
 #: ../src/unix/threadpsx.cpp:1167
 msgid "Failed to join a thread, potential memory leak detected - please restart the program"
-msgstr "Не вдалося з'єднатися з ниткою, можливий виток пам'яті, будь ласка, перезапустіть програму"
+msgstr "Не вдалося приєднатися до потоку, виявлено потенційний витік пам'яті - будь ласка, перезапустіть програму"
 
 #: ../src/msw/utils.cpp:629
 msgid "Failed to kill process %d"
@@ -22871,25 +22953,28 @@ msgstr "Не вдалося вбити процес %d"
 msgid "Failed to load bitmap \"%s\" from resources."
 msgstr "Не вдалося завантажити растрове зображення '%s' з ресурсів."
 
+# +++
 #: ../src/common/image.cpp:2509
 msgid "Failed to load icon \"%s\" from resources."
-msgstr "Не вдалося завантажити піктограму '%s' з ресурсів."
+msgstr "Не вдалося завантажити іконку \"%s\" з ресурсів."
 
 #: ../src/common/iconbndl.cpp:225
 msgid "Failed to load icons from resource '%s'."
 msgstr "Не вдалося завантажити значки з ресурсу '%s'."
 
+# +++
 #: ../src/common/iconbndl.cpp:200
 msgid "Failed to load image %%d from file '%s'."
-msgstr "Не вдалося завантажити зображення %%d з файла '%s'."
+msgstr "Не вдалося завантажити зображення %%d з файлу '%s'."
 
 #: ../src/common/iconbndl.cpp:208
 msgid "Failed to load image %d from stream."
 msgstr "Не вдалося завантажити зображення %d з потоку даних."
 
+# +++
 #: ../src/common/image.cpp:2587 ../src/common/image.cpp:2606
 msgid "Failed to load image from file \"%s\"."
-msgstr "Не вдалося завантажити зображення з файла '%s'."
+msgstr "Не вдалося завантажити зображення з файлу '%s'."
 
 #: ../src/msw/enhmeta.cpp:97
 msgid "Failed to load metafile from file \"%s\"."
@@ -22943,9 +23028,10 @@ msgstr "Не вдалося відкрити '%s' для запису"
 msgid "Failed to open CHM archive '%s'."
 msgstr "Не вдалося відкрити архів CHM '%s'."
 
+# +++
 #: ../src/common/utilscmn.cpp:1126
 msgid "Failed to open URL \"%s\" in default browser."
-msgstr "Не вдалося відкрити адресу '%s' у типовому переглядачі."
+msgstr "Не вдалося відкрити URL \"%s\" у браузері за замовчуванням."
 
 #: ../include/wx/msw/private/fswatcher.h:92
 msgid "Failed to open directory \"%s\" for monitoring."
@@ -22959,9 +23045,10 @@ msgstr "Не вдалося відкрити дисплей '%s'."
 msgid "Failed to open temporary file."
 msgstr "Не вдалося відкрити тимчасовий файл."
 
+# +++
 #: ../src/msw/clipbrd.cpp:91
 msgid "Failed to open the clipboard."
-msgstr "Не вдалося відкрити clipboard."
+msgstr "Не вдалося відкрити буфер обміну."
 
 #: ../src/common/translation.cpp:1184
 msgid "Failed to parse Plural-Forms: '%s'"
@@ -22971,6 +23058,7 @@ msgstr "Не вдалося обробити форми множини: '%s'"
 msgid "Failed to prepare playing \"%s\"."
 msgstr "Не вдалося приготувати '%s' до відтворення."
 
+# +++
 #: ../src/msw/clipbrd.cpp:600
 msgid "Failed to put data on the clipboard"
 msgstr "Не вдалося помістити дані в буфер обміну"
@@ -23043,17 +23131,19 @@ msgstr "Не вдалося отримати часи файла для '%s'"
 msgid "Failed to retrieve text of RAS error message"
 msgstr "Не вдалося прочитати повідомлення про помилку RAS"
 
+# +++
 #: ../src/msw/clipbrd.cpp:748
 msgid "Failed to retrieve the supported clipboard formats"
-msgstr "Не вдалося прочитати формати підтримані clipboard"
+msgstr "Не вдалося отримати підтримувані формати буфера обміну"
 
 #: ../src/common/docview.cpp:652
 msgid "Failed to save document to the file \"%s\"."
 msgstr "Не вдалося зберегти документ до файла '%s'."
 
+# +++
 #: ../src/msw/dib.cpp:269
 msgid "Failed to save the bitmap image to file \"%s\"."
-msgstr "Не вдалося зберегти растрове зображення до файла '%s'."
+msgstr "Не вдалося зберегти зображення до файлу '%s'."
 
 #: ../src/msw/dde.cpp:763
 msgid "Failed to send DDE advise notification"
@@ -23063,6 +23153,7 @@ msgstr "Не вдалося надіслати повідомлення DDE"
 msgid "Failed to set FTP transfer mode to %s."
 msgstr "Не вдалося встановити режим передачі FTP у значення %s."
 
+# +++
 #: ../src/msw/clipbrd.cpp:427
 msgid "Failed to set clipboard data."
 msgstr "Не вдалося встановити дані з буфера обміну."
@@ -23079,17 +23170,20 @@ msgstr "Не вдалося встановити пріоритет процес
 msgid "Failed to set temporary file permissions"
 msgstr "Не вдалося встановити дозволи на тимчасовий файл"
 
+# +++
 #: ../src/gtk/textctrl.cpp:1072
 msgid "Failed to set text in the text control."
-msgstr "Не вдалося встановити текст у контрол тексту."
+msgstr "Не вдалося задати текст в елементі керування текстом."
 
+# +++
 #: ../src/unix/threadpsx.cpp:1298
 msgid "Failed to set thread concurrency level to %lu"
-msgstr "Не вдалося встановити рівень пріоритетності нитки у значення %lu"
+msgstr "Не вдалося встановити рівень пріоритетності потоку у %lu"
 
+# +++
 #: ../src/unix/threadpsx.cpp:1424
 msgid "Failed to set thread priority %d."
-msgstr "Не вдалося встановити пріоритет нитки %d."
+msgstr "Не вдалося встановити пріоритет потоку %d."
 
 #: ../src/unix/utilsunx.cpp:783
 msgid "Failed to set up non-blocking pipe, the program might hang."
@@ -23123,9 +23217,10 @@ msgstr "Не вдалося повісити трубку: %s"
 msgid "Failed to touch the file '%s'"
 msgstr "Не вдалося відкрити файл '%s'"
 
+# +++
 #: ../src/unix/snglinst.cpp:334
 msgid "Failed to unlock lock file '%s'"
-msgstr "Не вдалося відімкнути файл замка '%s'"
+msgstr "Не вдалося розблокувати файл ключа '%s'"
 
 #: ../src/msw/dde.cpp:309
 msgid "Failed to unregister DDE server '%s'"
@@ -23291,7 +23386,7 @@ msgstr "GIF: потік даних здається обрізаний."
 
 #: ../src/common/imaggif.cpp:128
 msgid "GIF: error in GIF image format."
-msgstr "GIF: помилка в форматі зображення GIF."
+msgstr "GIF: помилка в форматі зображення .GIF."
 
 #: ../src/common/imaggif.cpp:133
 msgid "GIF: not enough memory."
@@ -23478,33 +23573,38 @@ msgstr ""
 
 #: ../src/common/imagbmp.cpp:1196
 msgid "ICO: Error in reading mask DIB."
-msgstr "ICO: Помилка під час читання маски DIB."
+msgstr "ICO: Помилка під час читання маски .DIB."
 
+# +++
 #: ../src/common/imagbmp.cpp:1290 ../src/common/imagbmp.cpp:1390 ../src/common/imagbmp.cpp:1405 ../src/common/imagbmp.cpp:1416
 #: ../src/common/imagbmp.cpp:1430 ../src/common/imagbmp.cpp:1478 ../src/common/imagbmp.cpp:1493 ../src/common/imagbmp.cpp:1507
 #: ../src/common/imagbmp.cpp:1518
 msgid "ICO: Error writing the image file!"
-msgstr "ICO: Помилка запису файла зображення!"
+msgstr "ICO: Помилка запису файлу зображення!"
 
+# +++
 #: ../src/common/imagbmp.cpp:1255
 msgid "ICO: Image too tall for an icon."
-msgstr "ICO: зображення зависоке для піктограми."
+msgstr "ICO: Зображення занадто високе для іконки."
 
+# +++
 #: ../src/common/imagbmp.cpp:1263
 msgid "ICO: Image too wide for an icon."
-msgstr "ICO: зображення зашироке для піктограми."
+msgstr "ICO: Зображення занадто широке для іконки."
 
+# +++
 #: ../src/common/imagbmp.cpp:1603
 msgid "ICO: Invalid icon index."
-msgstr "ICO: Помилковий індекс піктограми."
+msgstr "ICO: Неправильний індекс іконки."
 
 #: ../src/common/imagiff.cpp:758
 msgid "IFF: data stream seems to be truncated."
 msgstr "IFF: потік даних здається обрізано."
 
+# +++
 #: ../src/common/imagiff.cpp:742
 msgid "IFF: error in IFF image format."
-msgstr "IFF: помилка у форматі картинки IFF."
+msgstr "IFF: помилка у форматі зображення .IFF."
 
 #: ../src/common/imagiff.cpp:745
 msgid "IFF: not enough memory."
@@ -23544,21 +23644,24 @@ msgstr ""
 msgid "Ignoring value \"%s\" of the key \"%s\"."
 msgstr "Значенням '%s' ключа '%s' знехтувано."
 
+# +++
 #: ../src/common/xtistrm.cpp:295
 msgid "Illegal Object Class (Non-wxEvtHandler) as Event Source"
-msgstr "Некоректний клас об'єктів (Не-wxEvtHandler) як джерело подій"
+msgstr "Заборонений Клас Об'єкту (Non-wxEvtHandler) як Джерело Події"
 
 #: ../src/common/xti.cpp:513
 msgid "Illegal Parameter Count for ConstructObject Method"
 msgstr "Неправильна кількість параметрів у методі ConstructObject"
 
+# +++
 #: ../src/common/xti.cpp:501
 msgid "Illegal Parameter Count for Create Method"
-msgstr "Неправильна кількість параметрів у методі Create"
+msgstr "Неправильна Кількість Параметрів у Методі Створення"
 
+# +++
 #: ../src/generic/dirctrlg.cpp:570 ../src/generic/filectrlg.cpp:756
 msgid "Illegal directory name."
-msgstr "Неправильне назва теки."
+msgstr "Неправильне ім'я каталогу."
 
 #: ../src/generic/filectrlg.cpp:1367
 msgid "Illegal file specification."
@@ -23661,7 +23764,7 @@ msgstr "Вставити поле"
 
 #: ../src/richtext/richtextbuffer.cpp:7978 ../src/richtext/richtextbuffer.cpp:8936
 msgid "Insert Image"
-msgstr "Вставити картинку"
+msgstr "Вставити Зображення"
 
 #: ../src/richtext/richtextbuffer.cpp:8025
 msgid "Insert Object"
@@ -23686,7 +23789,7 @@ msgstr "Некоректний параметр командного рядка 
 
 #: ../src/common/imagtiff.cpp:311
 msgid "Invalid TIFF image index."
-msgstr "Неможливий індекс зображення TIFF."
+msgstr "Неможливий індекс зображення .TIFF."
 
 #: ../src/common/appcmn.cpp:273
 msgid "Invalid display mode specification '%s'."
@@ -23737,9 +23840,10 @@ msgstr "Італійський Конверт, 110 x 230 мм"
 msgid "JPEG: Couldn't load - file is probably corrupted."
 msgstr "JPEG: Не вдалося завантажити — можливо файл пошкоджено."
 
+# +++
 #: ../src/common/imagjpeg.cpp:449
 msgid "JPEG: Couldn't save image."
-msgstr "JPEG: Не вдалося записати зображення."
+msgstr "JPEG: Не вдалося зберегти зображення."
 
 #: ../src/common/paper.cpp:163
 msgid "Japanese Double Postcard 200 x 148 mm"
@@ -24437,9 +24541,10 @@ msgstr "Не визначено рушія анімації для типу %ld.
 msgid "No bitmap handler for type %d defined."
 msgstr "Не знайдено жодного інструмент обробки растру для типу %d."
 
+# +++
 #: ../src/common/utilscmn.cpp:1077
 msgid "No default application configured for HTML files."
-msgstr "Для файлів HTML не вказано типової програми."
+msgstr "Для HTML-файлів не налаштовано програму за замовчуванням."
 
 #: ../src/generic/helpext.cpp:445
 msgid "No entries found."
@@ -24768,9 +24873,10 @@ msgstr "Переповнення під час примусового встан
 msgid "PCX: couldn't allocate memory"
 msgstr "PCX: не можу виділити пам'ять"
 
+# +++
 #: ../src/common/imagpcx.cpp:456
 msgid "PCX: image format unsupported"
-msgstr "PCX: формат не підтримується"
+msgstr "PCX: формат зображення не підтримується"
 
 #: ../src/common/imagpcx.cpp:479
 msgid "PCX: invalid image"
@@ -25011,9 +25117,10 @@ msgstr "Будь ласка, виберіть наявний файл."
 msgid "Please choose the page to display:"
 msgstr "Будь ласка, виберіть сторінку для показу:"
 
+# +++
 #: ../src/msw/dialup.cpp:764
 msgid "Please choose which ISP do you want to connect to"
-msgstr "Будь ласка, виберіть надавача послуг інтернету, з яким слід з’єднатися"
+msgstr "Виберіть, будь ласка, до якого провайдера ви хочете підключитися"
 
 #: ../src/common/headerctrlcmn.cpp:59
 msgid "Please select the columns to show and define their order:"
@@ -25062,9 +25169,10 @@ msgstr "Попередня сторінка"
 msgid "Print Preview"
 msgstr "Перегляд Друку"
 
+# +++
 #: ../src/common/prntbase.cpp:2015 ../src/common/prntbase.cpp:2057 ../src/common/prntbase.cpp:2065
 msgid "Print Preview Failure"
-msgstr "Помилка попереднього Перегляду Друку"
+msgstr "Помилка Перегляду Друку"
 
 #: ../src/generic/prntdlgg.cpp:224
 msgid "Print Range"
@@ -25084,7 +25192,7 @@ msgstr "Перегляд друку…"
 
 #: ../src/common/docview.cpp:1262
 msgid "Print preview creation failed."
-msgstr "Не вдалося створити зображення попереднього перегляду друку."
+msgstr "Не вдалося створити попередній перегляд для друку."
 
 #: ../src/common/stockitem.cpp:182
 msgid "Print preview..."
@@ -25150,13 +25258,15 @@ msgstr "Друк сторінки %d…"
 msgid "Printing..."
 msgstr "Друк…"
 
+# +++
 #: ../include/wx/richtext/richtextprint.h:109 ../include/wx/prntbase.h:267 ../src/common/docview.cpp:2132
 msgid "Printout"
-msgstr "Відбиток"
+msgstr "Роздруківка"
 
+# +++
 #: ../src/common/debugrpt.cpp:560
 msgid "Processing debug report has failed, leaving the files in \"%s\" directory."
-msgstr "Робота над звітом про помилку завершилася помилкою, файли залишено у теці \"%s\"."
+msgstr "Обробка налагоджувального звіту завершилася невдало, залишивши файли у каталозі \"%s\"."
 
 #: ../src/common/stockitem.cpp:184
 msgid "Properties"
@@ -25533,9 +25643,10 @@ msgstr "Колір тіні:"
 msgid "Shift+"
 msgstr ""
 
+# +++
 #: ../src/generic/dirdlgg.cpp:147
 msgid "Show &hidden directories"
-msgstr "Показати приховані теки"
+msgstr "Показати приховані каталоги"
 
 #: ../src/generic/filectrlg.cpp:983
 msgid "Show &hidden files"
@@ -25751,17 +25862,19 @@ msgstr "Символи"
 msgid "TIFF: Couldn't allocate memory."
 msgstr "TIFF: Не вдалося виділити пам'ять."
 
+# +++
 #: ../src/common/imagtiff.cpp:301
 msgid "TIFF: Error loading image."
-msgstr "TIFF: Помилка під час завантаження зображення."
+msgstr "TIFF: Помилка завантаження зображення."
 
 #: ../src/common/imagtiff.cpp:468
 msgid "TIFF: Error reading image."
 msgstr "TIFF: Помилка читання зображення."
 
+# +++
 #: ../src/common/imagtiff.cpp:608
 msgid "TIFF: Error saving image."
-msgstr "TIFF: Помилка запису зображення."
+msgstr "TIFF: Помилка збереження зображення."
 
 #: ../src/common/imagtiff.cpp:846
 msgid "TIFF: Error writing image."
@@ -25876,13 +25989,15 @@ msgstr ""
 "замість нього інший набір або натиснути [Скасувати], \n"
 "якщо його не можна замінити"
 
+# +++
 #: ../src/msw/ole/dataobj.cpp:394
 msgid "The clipboard format '%d' doesn't exist."
-msgstr "Формату буфера даних '%d' не існує."
+msgstr "Формат буфера обміну '%d' не існує."
 
+# +++
 #: ../src/richtext/richtextstylepage.cpp:130 ../src/richtext/richtextstylepage.cpp:132
 msgid "The default style for the next paragraph."
-msgstr "Типовий стиль для наступного абзацу."
+msgstr "Стиль за замовчуванням для наступного абзацу."
 
 #: ../src/generic/dirdlgg.cpp:202
 msgid ""
@@ -25923,9 +26038,10 @@ msgstr "Крім того, підтримуються такі стандарт�
 msgid "The font colour."
 msgstr "Колір шрифту."
 
+# +++
 #: ../src/generic/fontdlgg.cpp:375 ../src/generic/fontdlgg.cpp:377
 msgid "The font family."
-msgstr "Гарнітура шрифту."
+msgstr "Сімейство шрифтів."
 
 #: ../src/richtext/richtextsymboldlg.cpp:405 ../src/richtext/richtextsymboldlg.cpp:407
 msgid "The font from which to take the symbol."
@@ -25936,13 +26052,15 @@ msgstr "Шрифт, з якого слід брати символ."
 msgid "The font point size."
 msgstr "Розмір шрифту."
 
+# +++
 #: ../src/osx/carbon/fontdlg.cpp:343 ../src/osx/carbon/fontdlg.cpp:345
 msgid "The font size in points."
-msgstr "Розмір шрифту у пунктах."
+msgstr "Розмір шрифту у точках."
 
+# +++
 #: ../src/richtext/richtextfontpage.cpp:181 ../src/richtext/richtextfontpage.cpp:183
 msgid "The font size units, points or pixels."
-msgstr "Одиниці виміру розміру символів шрифту, пункти або пікселі."
+msgstr "Одиниці виміру розміру символів шрифту, точки або пікселі."
 
 #: ../src/generic/fontdlgg.cpp:386 ../src/generic/fontdlgg.cpp:388
 msgid "The font style."
@@ -26035,9 +26153,10 @@ msgstr ""
 "Звіт містить файли зазначені нижче. Якщо хоч якийсь з цих файлів містить особисту інформацію,\n"
 "будь ласка, зніміть з них позначення, їх буде вилучено зі звіту.\n"
 
+# +++
 #: ../src/common/cmdline.cpp:1254
 msgid "The required parameter '%s' was not specified."
-msgstr "Обов'язковий параметр '%s' не вказаний."
+msgstr "Не вказано необхідний параметр '%s'."
 
 #: ../src/richtext/richtextindentspage.cpp:217 ../src/richtext/richtextindentspage.cpp:219
 #: ../src/richtext/richtextliststylepage.cpp:403 ../src/richtext/richtextliststylepage.cpp:405
@@ -26143,9 +26262,10 @@ msgstr ""
 msgid "The vertical offset."
 msgstr "Вертикальне зміщення."
 
+# +++
 #: ../src/richtext/richtextprint.cpp:619 ../src/html/htmprint.cpp:745
 msgid "There was a problem during page setup: you may need to set a default printer."
-msgstr "Під час створення сторінки виникла проблема: можливо, вам слід встановити типовий принтер."
+msgstr "Під час налаштування сторінки виникла проблема: можливо, вам потрібно встановити принтер за замовчуванням."
 
 #: ../src/html/htmprint.cpp:255
 msgid "This document doesn't fit on the page horizontally and will be truncated when it is printed."
@@ -26155,46 +26275,54 @@ msgstr "Цей документ не можна вмістити на сторі
 msgid "This is not a %s."
 msgstr "Це не %s."
 
+# +++
 #: ../src/common/wincmn.cpp:1653
 msgid "This platform does not support background transparency."
-msgstr "На цій платформі підтримки прозорості тла не передбачено."
+msgstr "Ця платформа не підтримує фонову прозорість."
 
 #: ../src/gtk/window.cpp:4660
 msgid "This program was compiled with a too old version of GTK+, please rebuild with GTK+ 2.12 or newer."
 msgstr ""
 "Цю програму було зібрано з надто старою версією GTK+. Будь ласка, виконайте повторне збирання з версією GTK+ 2.12 або новішою."
 
+# +++
 #: ../src/msw/thread.cpp:1240
 msgid "Thread module initialization failed: cannot store value in thread local storage"
-msgstr "Помилка ініціалізації модуля ниток: Не вдалося записати значення в локальному просторі нитки"
+msgstr "Помилка ініціалізації модуля потоку: не вдається зберегти значення у локальній пам'яті потоку"
 
+# +++
 #: ../src/unix/threadpsx.cpp:1794
 msgid "Thread module initialization failed: failed to create thread key"
-msgstr "Помилка ініціалізації модуля ниток: не вдалося створити ключ нитки"
+msgstr "Помилка ініціалізації модуля потоку: не вдалося створити ключ потоку"
 
+# +++
 #: ../src/msw/thread.cpp:1228
 msgid "Thread module initialization failed: impossible to allocate index in thread local storage"
-msgstr "Помилка ініціалізації модуля ниток: Не вдалося виділити індекс в локальному просторі нитки"
+msgstr "Помилка ініціалізації модуля потоку: неможливо виділити індекс у локальному сховищі потоку"
 
+# +++
 #: ../src/unix/threadpsx.cpp:1043
 msgid "Thread priority setting is ignored."
-msgstr "Пріоритет нитки проігноровано."
+msgstr "Встановлення пріоритету потоку ігнорується."
 
+# +++
 #: ../src/msw/mdi.cpp:176
 msgid "Tile &Horizontally"
-msgstr "Розставити горизонтально"
+msgstr "Розставити Горизонтально"
 
+# +++
 #: ../src/msw/mdi.cpp:177
 msgid "Tile &Vertically"
-msgstr "Розставити вертикально"
+msgstr "Розставити Вертикально"
 
+# +++
 #: ../src/common/ftp.cpp:200
 msgid "Timeout while waiting for FTP server to connect, try passive mode."
-msgstr "Тайм-аут очікування на з'єднання з сервером FTP, спроба пасивного режиму."
+msgstr "Тайм-аут очікування з'єднання з FTP-сервером, спробуйте пасивний режим."
 
 #: ../src/generic/tipdlg.cpp:201
 msgid "Tip of the Day"
-msgstr "Підказка дня"
+msgstr "Порада Дня"
 
 #: ../src/generic/tipdlg.cpp:140
 msgid "Tips not available, sorry!"
@@ -26232,10 +26360,11 @@ msgstr "Переклад "
 msgid "Translators"
 msgstr "Перекладачі"
 
+# ??? тест
 #. TRANSLATORS: Name of Boolean true value
 #: ../src/propgrid/propgrid.cpp:211
 msgid "True"
-msgstr ""
+msgstr "Так"
 
 #: ../src/common/fs_mem.cpp:227
 msgid "Trying to remove file '%s' from memory VFS, but it is not loaded!"
@@ -26247,11 +26376,11 @@ msgstr "Turkish (ISO-8859-9)"
 
 #: ../src/richtext/richtextfontpage.cpp:151 ../src/richtext/richtextfontpage.cpp:153
 msgid "Type a font name."
-msgstr "Наберіть назву шрифту."
+msgstr "Введіть назву шрифту."
 
 #: ../src/richtext/richtextfontpage.cpp:166 ../src/richtext/richtextfontpage.cpp:168
 msgid "Type a size in points."
-msgstr "Наберіть розмір у пунктах."
+msgstr "Введіть розмір у точках."
 
 #: ../src/msw/ole/automtn.cpp:676
 msgid "Type mismatch in argument %u."
@@ -26306,9 +26435,10 @@ msgstr "Не вдалося завершити роботу обробника '
 msgid "Unable to create I/O completion port"
 msgstr "Не вдалося створити порт завершення введення-виведення"
 
+# +++
 #: ../src/msw/fswatcher.cpp:84
 msgid "Unable to create IOCP worker thread"
-msgstr "Не вдалося створити нитку обробки IOCP"
+msgstr "Не вдається створити робочий потік IOCP"
 
 #: ../src/unix/fswatcher_inotify.cpp:74
 msgid "Unable to create inotify instance"
@@ -26362,9 +26492,10 @@ msgstr "Не вдалося вилучити спостереження kqueue"
 msgid "Unable to set up watch for '%s'"
 msgstr "Не вдалося налаштувати спостереження за '%s'"
 
+# +++
 #: ../src/msw/fswatcher.cpp:91
 msgid "Unable to start IOCP worker thread"
-msgstr "Не вдалося започаткувати нитку обробки IOCP"
+msgstr "Не вдається запустити робочий потік IOCP"
 
 #: ../src/common/stockitem.cpp:201
 msgid "Undelete"
@@ -26399,9 +26530,10 @@ msgstr "Несподіваний параметр '%s'"
 msgid "Unexpectedly new I/O completion port was created"
 msgstr "Неочікувано створено новий порт доповнення введення-виведення"
 
+# +++
 #: ../src/msw/fswatcher.cpp:70
 msgid "Ungraceful worker thread termination"
-msgstr "Некоректне завершення роботи нитки"
+msgstr "Некоректне завершення робочого потоку"
 
 #: ../src/richtext/richtextsymboldlg.cpp:459 ../src/richtext/richtextsymboldlg.cpp:460 ../src/richtext/richtextsymboldlg.cpp:461
 msgid "Unicode"
@@ -26623,9 +26755,10 @@ msgstr "Неназвана команда"
 msgid "Unspecified"
 msgstr "Не вказано"
 
+# +++
 #: ../src/msw/clipbrd.cpp:311
 msgid "Unsupported clipboard format."
-msgstr "Непідтримуваний формат clipboard."
+msgstr "Непідтримуваний формат буфера обміну."
 
 #: ../src/common/appcmn.cpp:256
 msgid "Unsupported theme '%s'."
@@ -26765,7 +26898,7 @@ msgstr ""
 
 #: ../src/common/fmapbase.cpp:177
 msgid "Windows Arabic (CP 1256)"
-msgstr "Арабська Windows (CP 1256)"
+msgstr "Windows Арабська (CP 1256)"
 
 #: ../src/common/fmapbase.cpp:178
 msgid "Windows Baltic (CP 1257)"
@@ -26785,7 +26918,7 @@ msgstr "Традиційна китайська Windows (CP 950) або Big-5"
 
 #: ../src/common/fmapbase.cpp:172
 msgid "Windows Cyrillic (CP 1251)"
-msgstr "Кирилична Windows (CP 1251)"
+msgstr "Windows Кирилиця (CP 1251)"
 
 #: ../src/common/fmapbase.cpp:174
 msgid "Windows Greek (CP 1253)"
@@ -26880,7 +27013,7 @@ msgstr "XPM: не залишилося кольорів для маски!"
 
 #: ../src/common/xpmdecod.cpp:782
 msgid "XPM: truncated image data at line %d!"
-msgstr "XPM: обрізані дані картинки у рядку %d!"
+msgstr "XPM: усічені дані зображення у рядку %d!"
 
 #: ../src/propgrid/advprops.cpp:1610
 msgid "Yellow"
@@ -27236,9 +27369,10 @@ msgstr "помилка в форматі даних"
 msgid "error opening file"
 msgstr "помилка під час відкриття файла"
 
+# +++
 #: ../src/common/zipstrm.cpp:1778
 msgid "error reading zip central directory"
-msgstr "помилка під час читання центральної теки zip"
+msgstr "помилка читання основного каталогу zip"
 
 #: ../src/common/zipstrm.cpp:1870
 msgid "error reading zip local header"
@@ -27252,10 +27386,11 @@ msgstr "помилка запису елемента zip '%s': помилков�
 msgid "failed to flush the file '%s'"
 msgstr "не вдалося скинути буфер файла '%s'."
 
+# ??? тест
 #. TRANSLATORS: Name of Boolean false value
 #: ../src/generic/datavgen.cpp:1030
 msgid "false"
-msgstr ""
+msgstr "ні"
 
 #: ../src/common/datetimefmt.cpp:1966
 msgid "fifteenth"
@@ -27309,9 +27444,10 @@ msgstr "четвертий"
 msgid "generate verbose log messages"
 msgstr "генерувати багатослівні повідомлення"
 
+# +++
 #: ../src/richtext/richtextbuffer.cpp:13138 ../src/richtext/richtextbuffer.cpp:13248
 msgid "image"
-msgstr "картинка"
+msgstr "зображення"
 
 #: ../src/common/tarstrm.cpp:796
 msgid "incomplete header block in tar"
@@ -27390,9 +27526,10 @@ msgstr "звичайний"
 msgid "num"
 msgstr ""
 
+# +++
 #: ../src/common/xtixml.cpp:259
 msgid "objects cannot have XML Text Nodes"
-msgstr "об'єкти не повинні мати текстових вузлів XML"
+msgstr "об'єкти не можуть мати Текстових Вузлів XML"
 
 #: ../src/html/chm.cpp:339
 msgid "out of memory"
@@ -27590,10 +27727,11 @@ msgstr "у '%s' проігноровано кінцеву похилу риск�
 msgid "translator-credits"
 msgstr "подяки перекладачам"
 
+# ??? тест
 #. TRANSLATORS: Name of Boolean true value
 #: ../src/generic/datavgen.cpp:1028
 msgid "true"
-msgstr "истинно"
+msgstr "так"
 
 #: ../src/common/datetimefmt.cpp:1963
 msgid "twelfth"
