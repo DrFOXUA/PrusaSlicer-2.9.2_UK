@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PrusaSlicer 2.9.3-UK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-05 15:48+0200\n"
-"PO-Revision-Date: 2025-10-13 21:08+0300\n"
+"PO-Revision-Date: 2025-10-13 22:53+0300\n"
 "Last-Translator: DrFOXUA <doctor13ua@gmail.com>\n"
 "Language-Team: FoxSoft <doctor13ua@gmail.com>\n"
 "Language: uk_UA\n"
@@ -7057,7 +7057,7 @@ msgstr "Нахил для смоли з високою в'язкістю"
 
 #: src/libslic3r/PrintConfig.cpp:4333
 msgid "Time of the super slow tilt"
-msgstr "Час дуже повільного нахилу ванночки"
+msgstr "Час дуже повільного нахилу"
 
 #: src/libslic3r/PrintConfig.cpp:4340
 msgid "Area fill threshold"
@@ -7504,7 +7504,7 @@ msgid ""
 msgstr ""
 "Повільніший профіль друку може знадобитися при використанні матеріалів з "
 "підвищеною в'язкістю або для деяких порожнистих деталей. \n"
-"Це уповільнює нахил ванночки і додає затримку перед засвіченням."
+"Він сповільнює рух нахилу і додає затримку перед експозицією."
 
 #: src/libslic3r/PrintConfig.cpp:4819
 msgid "Format of the output SLA archive"
@@ -7552,12 +7552,12 @@ msgstr "Швидкість підйому платформи."
 
 #: src/libslic3r/PrintConfig.cpp:4930
 msgid "Tilt down initial speed"
-msgstr "Початкова швидкість опускання"
+msgstr "Початкова швидкість нахилу вниз"
 
 #: src/libslic3r/PrintConfig.cpp:4931
 msgid "Tilt speed used for an initial portion of tilt down move."
 msgstr ""
-"Швидкість нахилу, яка використовується на початковій стадії опускання."
+"Швидкість нахилу, яка використовується на початковій стадії нахилу вниз."
 
 #: src/libslic3r/PrintConfig.cpp:4933 src/libslic3r/PrintConfig.cpp:4941
 #: src/libslic3r/PrintConfig.cpp:4949 src/libslic3r/PrintConfig.cpp:4957
@@ -7566,27 +7566,30 @@ msgstr "μ-кроків/с"
 
 #: src/libslic3r/PrintConfig.cpp:4938
 msgid "Tilt down finish speed"
-msgstr "Кінцева швидкість опускання"
+msgstr "Кінцева швидкість нахилу вниз"
 
 #: src/libslic3r/PrintConfig.cpp:4939
 msgid "Tilt speed used for the rest of the tilt down move."
-msgstr "Швидкість нахилу, яка використовується на кінцевій стадії опускання."
+msgstr ""
+"Швидкість нахилу, яка використовується на кінцевій стадії нахилу вниз."
 
 #: src/libslic3r/PrintConfig.cpp:4946
 msgid "Tilt up initial speed"
-msgstr "Початкова швидкість підйому"
+msgstr "Початкова швидкість нахилу вгору"
 
 #: src/libslic3r/PrintConfig.cpp:4947
 msgid "Tilt speed used for an initial portion of tilt up move."
-msgstr "Швидкість нахилу, яка використовується на початковій стадії підйому."
+msgstr ""
+"Швидкість нахилу, яка використовується на початковій стадії нахилу вгору."
 
 #: src/libslic3r/PrintConfig.cpp:4954
 msgid "Tilt up finish speed"
-msgstr "Кінцева швидкість підйому"
+msgstr "Кінцева швидкість нахилу вгору"
 
 #: src/libslic3r/PrintConfig.cpp:4955
 msgid "Tilt speed used for the rest of the tilt-up."
-msgstr "Швидкість нахилу, яка використовується на кінцевій стадії підйому."
+msgstr ""
+"Швидкість нахилу, яка використовується на кінцевій стадії нахилу вгору."
 
 #: src/libslic3r/PrintConfig.cpp:4962
 msgid "Use tilt"
@@ -7602,15 +7605,15 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:4968
 msgid "Tilt down offset steps"
-msgstr "Кроків зміщення під час опускання"
+msgstr "Кроків зміщення під час нахилу вниз"
 
 #: src/libslic3r/PrintConfig.cpp:4969
 msgid ""
 "Number of steps to move down from the calibrated (horizontal) position with "
 "'tilt_down_initial_speed'."
 msgstr ""
-"Кількість кроків для опускання ванночки з відкаліброваного "
-"(горизонтального) положення з 'початковою швидкістю опускання ванночки'."
+"Кількість кроків для переміщення вниз з відкаліброваного (горизонтального) "
+"положення з 'Початковою швидкістю нахилу вниз' ('tilt_down_initial_speed')."
 
 #: src/libslic3r/PrintConfig.cpp:4970 src/libslic3r/PrintConfig.cpp:5005
 msgid "μ-steps"
@@ -7618,69 +7621,68 @@ msgstr "μ-кроки"
 
 #: src/libslic3r/PrintConfig.cpp:4977
 msgid "Tilt down offset delay"
-msgstr "Затримка зміщення опускання"
+msgstr "Затримка зміщення нахилу вниз"
 
 #: src/libslic3r/PrintConfig.cpp:4978
 msgid "Delay after the tilt reaches 'tilt_down_offset_steps' position."
 msgstr ""
-"Затримка після того, як нахил ванночки досягне положення 'Кроків зміщення "
-"під час опускання ванночки'."
+"Затримка після того, як нахил досягне положення 'Кроків зміщення під час "
+"нахилу вниз'('tilt_down_offset_steps')."
 
 #: src/libslic3r/PrintConfig.cpp:4986
 msgid "Tilt down cycles"
-msgstr "Циклів опускання"
+msgstr "Циклів нахилу вниз"
 
 #: src/libslic3r/PrintConfig.cpp:4987
 msgid "Number of cycles to split the rest of the tilt down move."
 msgstr ""
 "Кількість циклів розділення частини руху, що залишилася, під час нахилу "
-"ванночки."
+"вниз."
 
 #: src/libslic3r/PrintConfig.cpp:4994
 msgid "Tilt down delay"
-msgstr "Затримка опускання"
+msgstr "Затримка нахилу вниз"
 
 #: src/libslic3r/PrintConfig.cpp:4995
 msgid "The delay between tilt-down cycles."
-msgstr "Затримка між циклами опускання ванночки."
+msgstr "Затримка між циклами нахилу вниз."
 
 #: src/libslic3r/PrintConfig.cpp:5003
 msgid "Tilt up offset steps"
-msgstr "Кроків зміщення під час підйому"
+msgstr "Кроків зміщення під час нахилу вгору"
 
 #: src/libslic3r/PrintConfig.cpp:5004
 msgid "Move tilt up to calibrated (horizontal) position minus this offset."
 msgstr ""
-"Підйому ванночки у відкаліброване (горизонтальне) положення за вирахуванням "
-"цього зміщення."
+"Перемістіть нахил вгору до відкаліброваного (горизонтального) положення за "
+"вирахуванням цього зміщення."
 
 #: src/libslic3r/PrintConfig.cpp:5012
 msgid "Tilt up offset delay"
-msgstr "Затримка зміщення підйому"
+msgstr "Затримка зміщення нахилу вгору"
 
 #: src/libslic3r/PrintConfig.cpp:5013
 msgid "Delay after the tilt reaches 'tilt_up_offset_steps' position."
 msgstr ""
-"Затримка після того, як нахил ванночки досягне положення 'Кроків зміщення "
-"під час підйому ванночки'."
+"Затримка після того, як нахил досягне положення 'Кроків зміщення під час "
+"нахилу вгору'('tilt_up_offset_steps')."
 
 #: src/libslic3r/PrintConfig.cpp:5021
 msgid "Tilt up cycles"
-msgstr "Циклів підйому"
+msgstr "Циклів нахилу вгору"
 
 #: src/libslic3r/PrintConfig.cpp:5022
 msgid "Number of cycles to split the rest of the tilt-up."
 msgstr ""
-"Кількість циклів поділу частини руху, що залишилася, під час підйому "
-"ванночки."
+"Кількість циклів поділу частини руху, що залишилася, під час нахилу вгору."
 
 #: src/libslic3r/PrintConfig.cpp:5029
 msgid "Tilt up delay"
-msgstr "Затримка підйому"
+msgstr "Затримка нахилу вгору"
 
 #: src/libslic3r/PrintConfig.cpp:5030
 msgid "The delay between tilt-up cycles."
-msgstr "Затримка між циклами підйому ванночки."
+msgstr "Затримка між циклами нахилу вгору."
 
 #: src/libslic3r/PrintConfig.cpp:5750
 msgid "Load config file"
